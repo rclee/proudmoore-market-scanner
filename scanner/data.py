@@ -12,6 +12,7 @@ from contextlib import closing
 from datetime import datetime, timedelta, timezone
 from decimal import Decimal, InvalidOperation
 from pathlib import Path
+from typing import Any
 
 
 class FeedError(ValueError):
@@ -67,8 +68,15 @@ class Feed:
 
 
 def parse_feed(scope: str, url: str, content: str, fetched_at: datetime) -> Feed:
+    try:
+        return _parse_feed(scope, url, content, fetched_at)
+    except csv.Error as exc:
+        raise FeedError(f"Invalid {scope} CSV: {exc}") from exc
+
+
+def _parse_feed(scope: str, url: str, content: str, fetched_at: datetime) -> Feed:
     reader = csv.DictReader(io.StringIO(content.lstrip("\ufeff")))
-    columns = reader.fieldnames or []
+    columns = list(reader.fieldnames or [])
     required = {"itemId", "name", "marketValue", "historical", "updatedAt"}
     required |= {"avgSalePrice", "saleRate", "soldPerDay"} if scope == "region" else {"minBuyout", "recent"}
     if len(set(columns)) != len(columns) or not required.issubset(columns):
@@ -79,7 +87,7 @@ def parse_feed(scope: str, url: str, content: str, fetched_at: datetime) -> Feed
     for line, source in enumerate(reader, start=2):
         if None in source or any(value is None for value in source.values()):
             raise FeedError(f"Malformed {scope} CSV row {line}")
-        row = dict(source)
+        row: dict[str, Any] = dict(source)
         for field in ("itemId", "marketValue", "historical", "minBuyout", "recent", "avgSalePrice"):
             if field in row:
                 row[field] = int(number(row[field], field, integer=True))
@@ -122,14 +130,28 @@ def fetch_feed(scope: str, url: str, now: datetime) -> Feed:
 
 def record_history(path: Path, feeds: list[Feed], candidates: list[dict], now: datetime, days: int) -> dict:
     path.parent.mkdir(parents=True, exist_ok=True)
+    existing = path.exists()
+    if existing and path.stat().st_size < 100:
+        raise FeedError("Existing history database is empty or truncated; refusing to reset it")
     with closing(sqlite3.connect(path)) as database, database:
+        if existing:
+            if (database.execute("PRAGMA quick_check").fetchall() != [("ok",)]
+                    or database.execute("PRAGMA user_version").fetchone()[0] != 1):
+                raise FeedError("Existing history database failed integrity or format validation")
+            for table, columns in {"scans": ["scope", "source_time", "fetched_at", "digest", "row_count"],
+                                   "observations": ["scope", "item_id", "source_time", "price"]}.items():
+                actual = [row[1] for row in database.execute(f"PRAGMA table_info({table})")]
+                if actual != columns:
+                    raise FeedError("Existing history database has an unsupported schema")
         database.execute("""CREATE TABLE IF NOT EXISTS scans (
             scope TEXT, source_time TEXT, fetched_at TEXT, digest TEXT, row_count INTEGER,
             PRIMARY KEY(scope, source_time))""")
         database.execute("""CREATE TABLE IF NOT EXISTS observations (
             scope TEXT, item_id INTEGER, source_time TEXT, price INTEGER,
             PRIMARY KEY(scope, item_id, source_time))""")
+        database.execute("PRAGMA user_version=1")
         inserted = 0
+        new_market_scans = set()
         for feed in feeds:
             prior = database.execute("SELECT digest FROM scans WHERE scope=? AND source_time=?",
                                      (feed.scope, feed.source_time)).fetchone()
@@ -138,13 +160,17 @@ def record_history(path: Path, feeds: list[Feed], candidates: list[dict], now: d
             cursor = database.execute("INSERT OR IGNORE INTO scans VALUES (?,?,?,?,?)",
                                       (feed.scope, feed.source_time, feed.fetched_at, feed.digest, len(feed.rows)))
             inserted += cursor.rowcount
+            if cursor.rowcount and feed.scope != "region":
+                new_market_scans.add((feed.scope, feed.source_time))
         for candidate in candidates:
+            if (candidate["scope"], candidate["source_time"]) not in new_market_scans:
+                continue
             database.execute("INSERT OR IGNORE INTO observations VALUES (?,?,?,?)",
                              (candidate["scope"], candidate["item_id"], candidate["source_time"],
                               candidate["observed_buy_copper"]))
         cutoff = (now - timedelta(days=days)).isoformat()
-        database.execute("DELETE FROM scans WHERE source_time < ?", (cutoff,))
-        database.execute("DELETE FROM observations WHERE source_time < ?", (cutoff,))
+        database.execute("DELETE FROM scans WHERE julianday(source_time) < julianday(?)", (cutoff,))
+        database.execute("DELETE FROM observations WHERE julianday(source_time) < julianday(?)", (cutoff,))
         count = database.execute("SELECT count(*) FROM scans").fetchone()[0]
         observations = database.execute("SELECT count(*) FROM observations").fetchone()[0]
         coverage = database.execute("SELECT min(source_time), max(source_time) FROM observations").fetchone()

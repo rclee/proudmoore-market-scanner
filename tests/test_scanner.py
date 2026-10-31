@@ -56,8 +56,26 @@ class FinancialRules(unittest.TestCase):
         rows, _ = build_watchlist(self.feeds, self.config, summaries)
         self.assertTrue(all('Source data is stale' in row['blockers'] for row in rows))
 
+    def test_unnamed_records_are_counted_and_excluded(self):
+        self.feeds[0].rows[0]['name'] = ''
+        self.assertEqual(self.feeds[0].summary(NOW, 6)['unnamed_rows'], 1)
+        self.assertEqual([row['scope'] for row in self.scan()], ['commodities'])
+
 
 class FeedValidation(unittest.TestCase):
+    def test_oversized_csv_fields_become_feed_errors(self):
+        content = HEADER + ROW.replace('Test item', 'x' * 140000)
+        with self.assertRaises(FeedError):
+            parse_feed('realm', 'https://example.com', content, NOW)
+
+    def test_empty_existing_history_is_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'history.sqlite3'
+            path.touch()
+            with self.assertRaises(FeedError):
+                record_history(path, [], [], NOW, 35)
+            self.assertEqual(path.stat().st_size, 0)
+
     def test_valid_schema_preserves_integer_copper_and_utc(self):
         feed = parse_feed('realm', 'https://example.com', HEADER + ROW, NOW)
         self.assertEqual(feed.rows[0]['minBuyout'], 5_000_000)
@@ -100,6 +118,17 @@ class FeedValidation(unittest.TestCase):
 
 
 class CommandAndReports(unittest.TestCase):
+    def test_non_object_configuration_always_writes_unavailable(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory)
+            config = output / 'bad.json'
+            for content in ('[]', 'null', '"text"'):
+                config.write_text(content, encoding='utf-8')
+                code = main(['--config', str(config), '--output', str(output)])
+                report = json.loads((output / 'report.json').read_text(encoding='utf-8'))
+                self.assertEqual(code, 2)
+                self.assertEqual(report['status'], 'unavailable')
+
     def test_invalid_configuration_replaces_prior_results(self):
         with tempfile.TemporaryDirectory() as directory:
             output = Path(directory)

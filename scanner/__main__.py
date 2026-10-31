@@ -15,6 +15,8 @@ from scanner.report import write_reports
 
 def load_config(path: Path) -> dict:
     config = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(config, dict):
+        raise FeedError("Configuration must be a JSON object")
     if config.get("region") != "us" or config.get("realm") != "proudmoore":
         raise FeedError("This milestone supports only Proudmoore-US Retail")
     integer_fields = ("budget_gold", "reserve_gold", "max_unit_cost_gold", "max_item_exposure_gold",
