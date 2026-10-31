@@ -20,6 +20,8 @@ class FeedError(ValueError):
 
 
 def timestamp(value: str) -> datetime:
+    if not isinstance(value, str):
+        raise FeedError("Source timestamp must be a string")
     try:
         parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
         if parsed.tzinfo is None:

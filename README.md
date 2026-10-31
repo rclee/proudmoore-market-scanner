@@ -6,6 +6,8 @@ A research-only WoW Retail market scanner for Proudmoore-US. Runs without a gami
 
 **Daily phone page:** [Proudmoore Daily Gold](https://proudmoore-daily-gold.airofcozy.chatgpt.site) (owner-private; sign in with the owner's ChatGPT account). It shows a skip-first decision, a local vendor-profit checker, TSM shopping setup, and up to three optional commodity research leads. No verified vendor deals are currently supplied by the public feeds, which lack vendor sell values.
 
+The enriched version adds live-build vendor references covering most US commodities, newer AHledger commodity quantities and seven-day snapshot history, a timestamped US token price, public r/woweconomy and TSM blog feeds, and a daily procedural brief. References and snapshots remain conditional; the brief does not turn them into verified game quotes. See [data-source research](docs/MORE_DATA_RESEARCH.md), [community access](docs/COMMUNITY_SOURCES.md), and the [trading playbook](docs/TRADING_PLAYBOOK.md).
+
 **This first milestone produces a watchlist, not actionable purchase recommendations.** It cannot prove that an auction sells, verify current listing depth or equipment variants, read your inventory, or guarantee subscription funding.
 
 ## Run locally
@@ -14,6 +16,7 @@ From this project folder:
 
 ```powershell
 python -m scanner
+python -m scanner.enrich
 python -m scanner --demo
 python -m unittest discover -s tests -v
 ```
@@ -29,6 +32,10 @@ The documented [TSM public CSV feeds](https://tradeskillmaster.com/public-data):
 - US regional item and demand estimates: `https://public-data.tradeskillmaster.com/retail/us/region/items.csv`
 
 These are separate market scopes. Market files refresh every few hours; region files daily. The scanner uses upstream `updatedAt`, not fetch time, for freshness. No TSM key is needed. Demand estimates do not establish actual Proudmoore sales or your personal chance of a sale.
+
+`scanner.enrich` follows a successful core scan. Wago's homepage identifies the live Retail product `wow`; the collector pins that build and reads ItemSparse. Non-equipment stackable records with no inspected level curves provide reference sell prices. The catalog is cached for 24 hours in durable SQLite and the live-build lookup for four hours; the full CSV is never published. A bounded set of at most 15 AHledger US commodity history reads (plus vendor corroboration where still relevant), one token feed, and two community feeds run independently. Network outages stop a provider, and an overall enrichment budget leaves time for core report publication. All external data keeps its source and timestamp.
+
+Public r/woweconomy RSS access was verified. Reddit JSON was blocked; r/wowgoblins RSS was rate-limited, so neither is bypassed. Community headline collection is not equivalent to automated expert reading of every discussion. Older TSM blog entries retain their original dates.
 
 Schemas, positive demand coverage, row counts, timestamps, filters, and history coverage appear in each validation report. The scanner strictly rejects malformed rows, duplicate IDs, negative/fractional copper, future/mixed scan timestamps, and missing required columns. New extra columns are tolerated. Changed content under an existing source scan timestamp fails safely for inspection.
 

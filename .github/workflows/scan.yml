@@ -56,6 +56,9 @@ jobs:
       - name: Collect and validate live feeds
         id: collect
         run: python -m scanner
+      - name: Add vendor references, commodity depth and token price
+        if: success()
+        run: python -m scanner.enrich
       - name: Persist history on separate branch
         if: success()
         shell: bash

@@ -44,6 +44,20 @@ def validation(report: dict) -> str:
                   "No personal transaction data is collected. All recommended quantities are zero.", "",
                   "## History", "", json.dumps(report.get("history", {}), indent=2), "",
                   "## Filters", "", json.dumps(report.get("filters", {}), indent=2), ""])
+    if "enrichment" in report:
+        extra = report["enrichment"]
+        lines.extend(["## Additional sources", "", f"Status: {extra['status']}",
+            "Vendor values are pinned Retail client-data references, not verified live NPC payouts.",
+            "AHledger quantities describe total snapshot supply, not units at its cheapest price.",
+            "Community posts are unverified research leads; they never directly authorize purchases.", "",
+            "```json", json.dumps({"vendor_catalog": extra.get("vendor_catalog"), "token": extra.get("token"),
+                "commodity_details": len(extra.get("commodity_details", [])),
+                "daily_brief": extra.get("daily_brief"),
+                "community": [{"provider": f["provider"], "status": f["status"]} for f in extra.get("community", [])],
+                "errors": extra.get("errors", [])}, indent=2), "```", "",
+            "Sources: [Wago](https://wago.tools/), [AHledger](https://ahledger.com/developers), "
+            "[wowtoken.app](https://wowtoken.app/), [r/woweconomy](https://www.reddit.com/r/woweconomy/), "
+            "[TSM Blog](https://blog.tradeskillmaster.com/).", ""])
     return "\n".join(lines)
 
 
