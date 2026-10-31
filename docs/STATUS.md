@@ -31,3 +31,13 @@ The downloaded initial cloud report confirmed 18 watchlist candidates, zero acti
 - No verified vendor opportunities, executed trades, or token-funding results have been established. The public feeds do not contain exact vendor values.
 
 No subscription or Blizzard credentials are needed for this first milestone. No trades have been made or recommended.
+
+## More data and daily briefing delivered
+
+- Live page now begins with the daily action brief, followed by vendor-reference coverage, US token quote, newer commodity snapshots, seven-day charts, and community-source pulse.
+- The first enriched cloud run succeeded: https://github.com/rclee/proudmoore-market-scanner/actions/runs/41222327875
+- Downloaded cloud artifact confirmed 10,890 matched commodity vendor references and 15 current commodity/history records. r/woweconomy RSS worked from the cloud; official TSM blog RSS failed there while working locally, and its unavailable status is shown. r/wowgoblins RSS429 and Reddit JSON403 are not bypassed.
+- All ten older below-reference flags were rejected by newer prices. The current daily brief therefore contains no buying tasks.
+- Current checks: 28 Python tests, 12 JavaScript tests, clean type check, phone/desktop QA, and actual public feed verification. Site publication succeeded with owner-private access.
+- GitHub's raw-file cache initially served the prior report. The page now prefers the current-content API (UTF-8 Base64 decoded) and retains the raw endpoint as a fallback. Both paths retain timestamp validation.
+- Detailed sources and strategy prerequisites are in MORE_DATA_RESEARCH.md, COMMUNITY_SOURCES.md, and TRADING_PLAYBOOK.md. Full discussion analysis and realized-profit calibration are not supplied by headline collection alone. Exact Proudmoore non-commodity depth still needs a verified source or Blizzard developer credentials.

@@ -13,9 +13,11 @@ Two findings were corrected: provider stalls could consume the entire workflow; 
 ## Verification
 
 - 28 Python behavioral tests and a clean type check.
-- 11 JavaScript tests including stale instructions and malformed tasks.
+- 12 JavaScript tests including stale instructions, malformed tasks, and UTF-8 current-content decoding.
 - Actual live enrichment joined 10,890 of 10,977 commodity IDs against pinned Retail build12.1.5.70688. It fetched 15 newer US commodity snapshots with seven-day history and a US token price.
 - All ten old-feed below-reference discounts were rejected by newer snapshot prices. No trade was represented as verified or executed.
 - r/woweconomy Atom RSS and official TSM blog RSS worked. Reddit JSON403 and r/wowgoblins RSS429 were not bypassed.
+
+Cloud verification: vendor coverage and 15 commodity histories worked from GitHub Actions. Reddit RSS worked there; TSM blog RSS was unavailable and is displayed as such. Native owner-private Site deployment succeeded. Browser verification against the actual public current-content endpoint confirmed the new coverage, charts, Reddit panel and skip instructions. GitHub raw-cache delay was corrected with a current-content API read and a raw fallback.
 
 Static vendor values can miss server hotfixes/context. Total supply is not cheapest-price depth. Community posts are research leads, and published profit claims remain unverified for this character. The playbook documents prerequisites before other strategies can enter the daily instructions.
