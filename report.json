@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T17:08:30.317420+00:00",
+  "generated_at": "2026-10-31T18:12:08.364754+00:00",
   "mode": "live",
   "status": "watch_only",
   "feeds": [
@@ -17,9 +17,9 @@
       ],
       "row_count": 17257,
       "source_time": "2026-10-31T14:32:23+00:00",
-      "fetched_at": "2026-10-31T17:08:30.317420+00:00",
+      "fetched_at": "2026-10-31T18:12:08.364754+00:00",
       "sha256": "d67a87a98c4b8fce708256cbdde0e7e9d2840cbcd7302a776144fdf61e183860",
-      "age_hours": 2.6,
+      "age_hours": 3.66,
       "fresh": true,
       "demand_fields_present": false,
       "unnamed_rows": 102,
@@ -39,9 +39,9 @@
       ],
       "row_count": 10977,
       "source_time": "2026-10-31T14:33:41+00:00",
-      "fetched_at": "2026-10-31T17:08:30.317420+00:00",
+      "fetched_at": "2026-10-31T18:12:08.364754+00:00",
       "sha256": "c4a9ad07992a3c07b7fbb67f4594fc65e90b8665eb9a9f71687578f61e946a68",
-      "age_hours": 2.58,
+      "age_hours": 3.64,
       "fresh": true,
       "demand_fields_present": false,
       "unnamed_rows": 170,
@@ -62,9 +62,9 @@
       ],
       "row_count": 29995,
       "source_time": "2026-10-30T08:44:47+00:00",
-      "fetched_at": "2026-10-31T17:08:30.317420+00:00",
+      "fetched_at": "2026-10-31T18:12:08.364754+00:00",
       "sha256": "043a3caa50af005bc24d73a0ccc3da343eaa8fb9f7a2498f8a17becdaad2397e",
-      "age_hours": 32.4,
+      "age_hours": 33.46,
       "fresh": true,
       "demand_fields_present": true,
       "unnamed_rows": 283,
@@ -576,10 +576,10 @@
   "config": {
     "region": "us",
     "realm": "proudmoore",
-    "budget_gold": 40000,
-    "reserve_gold": 10000,
+    "budget_gold": 200000,
+    "reserve_gold": 40000,
     "max_unit_cost_gold": 4000,
-    "max_item_exposure_gold": 4000,
+    "max_item_exposure_gold": 20000,
     "minimum_return_bps": 2000,
     "auction_cut_bps": 500,
     "resale_markdown_bps": 1000,
@@ -611,26 +611,20 @@
     "coverage": "Shortlisted observations only; not complete market or sales history"
   },
   "enrichment": {
-    "generated_at": "2026-10-31T17:08:31.369871+00:00",
+    "generated_at": "2026-10-31T18:12:10.105549+00:00",
     "commodity_details": [
       {
         "item_id": 248136,
         "name": "M3DDY, Travel-Sized",
         "market": "retail-commodities.normal.neutral.us",
         "status": "fresh",
-        "observed_at": "2026-10-31T16:33:44+00:00",
-        "fetched_at": "2026-10-31T17:08:31.369871+00:00",
+        "observed_at": "2026-10-31T17:33:42+00:00",
+        "fetched_at": "2026-10-31T18:12:10.105549+00:00",
         "unit_price_copper": 174700,
         "median_copper": 2095300,
-        "total_quantity": 268,
-        "auction_count": 42,
+        "total_quantity": 270,
+        "auction_count": 43,
         "history": [
-          {
-            "at": "2026-10-24T18:00:00+00:00",
-            "min_copper": 189900,
-            "median_copper": 2095300,
-            "quantity": 238
-          },
           {
             "at": "2026-10-24T19:00:00+00:00",
             "min_copper": 189900,
@@ -1620,6 +1614,12 @@
             "min_copper": 174700,
             "median_copper": 2095300,
             "quantity": 268
+          },
+          {
+            "at": "2026-10-31T17:00:00+00:00",
+            "min_copper": 174700,
+            "median_copper": 2095300,
+            "quantity": 270
           }
         ],
         "source": "AHledger",
@@ -1635,19 +1635,13 @@
         "name": "Enchant Shoulders - Flight of the Eagle",
         "market": "retail-commodities.normal.neutral.us",
         "status": "fresh",
-        "observed_at": "2026-10-31T16:33:44+00:00",
-        "fetched_at": "2026-10-31T17:08:31.369871+00:00",
+        "observed_at": "2026-10-31T17:33:42+00:00",
+        "fetched_at": "2026-10-31T18:12:10.105549+00:00",
         "unit_price_copper": 50000,
         "median_copper": 58900,
-        "total_quantity": 294,
-        "auction_count": 91,
+        "total_quantity": 299,
+        "auction_count": 96,
         "history": [
-          {
-            "at": "2026-10-24T18:00:00+00:00",
-            "min_copper": 50000,
-            "median_copper": 69900,
-            "quantity": 295
-          },
           {
             "at": "2026-10-24T19:00:00+00:00",
             "min_copper": 50000,
@@ -2637,6 +2631,12 @@
             "min_copper": 50000,
             "median_copper": 58900,
             "quantity": 294
+          },
+          {
+            "at": "2026-10-31T17:00:00+00:00",
+            "min_copper": 50000,
+            "median_copper": 58900,
+            "quantity": 299
           }
         ],
         "source": "AHledger",
@@ -2652,19 +2652,13 @@
         "name": "Enchant Helm - Hex of Leeching",
         "market": "retail-commodities.normal.neutral.us",
         "status": "fresh",
-        "observed_at": "2026-10-31T16:33:44+00:00",
-        "fetched_at": "2026-10-31T17:08:31.369871+00:00",
+        "observed_at": "2026-10-31T17:33:42+00:00",
+        "fetched_at": "2026-10-31T18:12:10.105549+00:00",
         "unit_price_copper": 51000,
         "median_copper": 52200,
-        "total_quantity": 264,
-        "auction_count": 77,
+        "total_quantity": 276,
+        "auction_count": 80,
         "history": [
-          {
-            "at": "2026-10-24T18:00:00+00:00",
-            "min_copper": 50000,
-            "median_copper": 50400,
-            "quantity": 306
-          },
           {
             "at": "2026-10-24T19:00:00+00:00",
             "min_copper": 50000,
@@ -3654,6 +3648,12 @@
             "min_copper": 51000,
             "median_copper": 52200,
             "quantity": 264
+          },
+          {
+            "at": "2026-10-31T17:00:00+00:00",
+            "min_copper": 51000,
+            "median_copper": 52200,
+            "quantity": 276
           }
         ],
         "source": "AHledger",
@@ -3669,19 +3669,13 @@
         "name": "Enchant Helm - Blessing of Speed",
         "market": "retail-commodities.normal.neutral.us",
         "status": "fresh",
-        "observed_at": "2026-10-31T16:33:44+00:00",
-        "fetched_at": "2026-10-31T17:08:31.369871+00:00",
-        "unit_price_copper": 45000,
+        "observed_at": "2026-10-31T17:33:42+00:00",
+        "fetched_at": "2026-10-31T18:12:10.105549+00:00",
+        "unit_price_copper": 49900,
         "median_copper": 54900,
-        "total_quantity": 296,
-        "auction_count": 64,
+        "total_quantity": 318,
+        "auction_count": 69,
         "history": [
-          {
-            "at": "2026-10-24T18:00:00+00:00",
-            "min_copper": 50000,
-            "median_copper": 51500,
-            "quantity": 619
-          },
           {
             "at": "2026-10-24T19:00:00+00:00",
             "min_copper": 50000,
@@ -4671,6 +4665,12 @@
             "min_copper": 45000,
             "median_copper": 54900,
             "quantity": 296
+          },
+          {
+            "at": "2026-10-31T17:00:00+00:00",
+            "min_copper": 49900,
+            "median_copper": 54900,
+            "quantity": 318
           }
         ],
         "source": "AHledger",
@@ -4686,19 +4686,13 @@
         "name": "Algae Covered Stone",
         "market": "retail-commodities.normal.neutral.us",
         "status": "fresh",
-        "observed_at": "2026-10-31T16:33:44+00:00",
-        "fetched_at": "2026-10-31T17:08:31.369871+00:00",
+        "observed_at": "2026-10-31T17:33:42+00:00",
+        "fetched_at": "2026-10-31T18:12:10.105549+00:00",
         "unit_price_copper": 18800,
         "median_copper": 18800,
-        "total_quantity": 85,
-        "auction_count": 29,
+        "total_quantity": 87,
+        "auction_count": 30,
         "history": [
-          {
-            "at": "2026-10-24T18:00:00+00:00",
-            "min_copper": 18800,
-            "median_copper": 18800,
-            "quantity": 121
-          },
           {
             "at": "2026-10-24T19:00:00+00:00",
             "min_copper": 18800,
@@ -5688,6 +5682,12 @@
             "min_copper": 18800,
             "median_copper": 18800,
             "quantity": 85
+          },
+          {
+            "at": "2026-10-31T17:00:00+00:00",
+            "min_copper": 18800,
+            "median_copper": 18800,
+            "quantity": 87
           }
         ],
         "source": "AHledger",
@@ -5703,19 +5703,13 @@
         "name": "Three of Blood",
         "market": "retail-commodities.normal.neutral.us",
         "status": "fresh",
-        "observed_at": "2026-10-31T16:33:44+00:00",
-        "fetched_at": "2026-10-31T17:08:31.369871+00:00",
-        "unit_price_copper": 25000,
-        "median_copper": 60000,
-        "total_quantity": 642,
-        "auction_count": 412,
+        "observed_at": "2026-10-31T17:33:42+00:00",
+        "fetched_at": "2026-10-31T18:12:10.105549+00:00",
+        "unit_price_copper": 23400,
+        "median_copper": 44500,
+        "total_quantity": 693,
+        "auction_count": 450,
         "history": [
-          {
-            "at": "2026-10-24T18:00:00+00:00",
-            "min_copper": 20900,
-            "median_copper": 90000,
-            "quantity": 753
-          },
           {
             "at": "2026-10-24T19:00:00+00:00",
             "min_copper": 20900,
@@ -6705,6 +6699,12 @@
             "min_copper": 25000,
             "median_copper": 60000,
             "quantity": 642
+          },
+          {
+            "at": "2026-10-31T17:00:00+00:00",
+            "min_copper": 23400,
+            "median_copper": 44500,
+            "quantity": 693
           }
         ],
         "source": "AHledger",
@@ -6720,19 +6720,13 @@
         "name": "Five of Blood",
         "market": "retail-commodities.normal.neutral.us",
         "status": "fresh",
-        "observed_at": "2026-10-31T16:33:44+00:00",
-        "fetched_at": "2026-10-31T17:08:31.369871+00:00",
-        "unit_price_copper": 29700,
-        "median_copper": 81900,
-        "total_quantity": 607,
-        "auction_count": 312,
+        "observed_at": "2026-10-31T17:33:42+00:00",
+        "fetched_at": "2026-10-31T18:12:10.105549+00:00",
+        "unit_price_copper": 25200,
+        "median_copper": 60000,
+        "total_quantity": 654,
+        "auction_count": 342,
         "history": [
-          {
-            "at": "2026-10-24T18:00:00+00:00",
-            "min_copper": 19500,
-            "median_copper": 33800,
-            "quantity": 535
-          },
           {
             "at": "2026-10-24T19:00:00+00:00",
             "min_copper": 20000,
@@ -7722,6 +7716,12 @@
             "min_copper": 29700,
             "median_copper": 81900,
             "quantity": 607
+          },
+          {
+            "at": "2026-10-31T17:00:00+00:00",
+            "min_copper": 25200,
+            "median_copper": 60000,
+            "quantity": 654
           }
         ],
         "source": "AHledger",
@@ -7737,19 +7737,13 @@
         "name": "Tempered Potion",
         "market": "retail-commodities.normal.neutral.us",
         "status": "fresh",
-        "observed_at": "2026-10-31T16:33:44+00:00",
-        "fetched_at": "2026-10-31T17:08:31.369871+00:00",
+        "observed_at": "2026-10-31T17:33:42+00:00",
+        "fetched_at": "2026-10-31T18:12:10.105549+00:00",
         "unit_price_copper": 9800,
         "median_copper": 97600,
-        "total_quantity": 11235,
+        "total_quantity": 11279,
         "auction_count": 69,
         "history": [
-          {
-            "at": "2026-10-24T18:00:00+00:00",
-            "min_copper": 9800,
-            "median_copper": 9800,
-            "quantity": 3198
-          },
           {
             "at": "2026-10-24T19:00:00+00:00",
             "min_copper": 9800,
@@ -8739,6 +8733,12 @@
             "min_copper": 9800,
             "median_copper": 97600,
             "quantity": 11235
+          },
+          {
+            "at": "2026-10-31T17:00:00+00:00",
+            "min_copper": 9800,
+            "median_copper": 97600,
+            "quantity": 11279
           }
         ],
         "source": "AHledger",
@@ -8754,19 +8754,13 @@
         "name": "Shaded Stone",
         "market": "retail-commodities.normal.neutral.us",
         "status": "fresh",
-        "observed_at": "2026-10-31T16:33:44+00:00",
-        "fetched_at": "2026-10-31T17:08:31.369871+00:00",
-        "unit_price_copper": 2200,
+        "observed_at": "2026-10-31T17:33:42+00:00",
+        "fetched_at": "2026-10-31T18:12:10.105549+00:00",
+        "unit_price_copper": 2100,
         "median_copper": 3700,
-        "total_quantity": 6101,
-        "auction_count": 45,
+        "total_quantity": 6297,
+        "auction_count": 61,
         "history": [
-          {
-            "at": "2026-10-24T18:00:00+00:00",
-            "min_copper": 1400,
-            "median_copper": 4500,
-            "quantity": 7008
-          },
           {
             "at": "2026-10-24T19:00:00+00:00",
             "min_copper": 1400,
@@ -9756,6 +9750,12 @@
             "min_copper": 2200,
             "median_copper": 3700,
             "quantity": 6101
+          },
+          {
+            "at": "2026-10-31T17:00:00+00:00",
+            "min_copper": 2100,
+            "median_copper": 3700,
+            "quantity": 6297
           }
         ],
         "source": "AHledger",
@@ -9771,19 +9771,13 @@
         "name": "Salt Deposit",
         "market": "retail-commodities.normal.neutral.us",
         "status": "fresh",
-        "observed_at": "2026-10-31T16:33:44+00:00",
-        "fetched_at": "2026-10-31T17:08:31.369871+00:00",
-        "unit_price_copper": 8900,
-        "median_copper": 99900,
-        "total_quantity": 1152,
-        "auction_count": 30,
+        "observed_at": "2026-10-31T17:33:42+00:00",
+        "fetched_at": "2026-10-31T18:12:10.105549+00:00",
+        "unit_price_copper": 7400,
+        "median_copper": 14900,
+        "total_quantity": 1808,
+        "auction_count": 57,
         "history": [
-          {
-            "at": "2026-10-24T18:00:00+00:00",
-            "min_copper": 400,
-            "median_copper": 12000,
-            "quantity": 1183
-          },
           {
             "at": "2026-10-24T19:00:00+00:00",
             "min_copper": 400,
@@ -10773,6 +10767,12 @@
             "min_copper": 8900,
             "median_copper": 99900,
             "quantity": 1152
+          },
+          {
+            "at": "2026-10-31T17:00:00+00:00",
+            "min_copper": 7400,
+            "median_copper": 14900,
+            "quantity": 1808
           }
         ],
         "source": "AHledger",
@@ -10788,19 +10788,13 @@
         "name": "Dragon's Eye",
         "market": "retail-commodities.normal.neutral.us",
         "status": "fresh",
-        "observed_at": "2026-10-31T16:33:44+00:00",
-        "fetched_at": "2026-10-31T17:08:31.369871+00:00",
+        "observed_at": "2026-10-31T17:33:42+00:00",
+        "fetched_at": "2026-10-31T18:12:10.105549+00:00",
         "unit_price_copper": 9480000,
         "median_copper": 10909000,
-        "total_quantity": 632,
-        "auction_count": 15,
+        "total_quantity": 546,
+        "auction_count": 17,
         "history": [
-          {
-            "at": "2026-10-24T18:00:00+00:00",
-            "min_copper": 17999900,
-            "median_copper": 17999900,
-            "quantity": 770
-          },
           {
             "at": "2026-10-24T19:00:00+00:00",
             "min_copper": 17990000,
@@ -11790,6 +11784,12 @@
             "min_copper": 9480000,
             "median_copper": 10909000,
             "quantity": 632
+          },
+          {
+            "at": "2026-10-31T17:00:00+00:00",
+            "min_copper": 9480000,
+            "median_copper": 10909000,
+            "quantity": 546
           }
         ],
         "source": "AHledger",
@@ -11805,19 +11805,13 @@
         "name": "Majestic Zircon",
         "market": "retail-commodities.normal.neutral.us",
         "status": "fresh",
-        "observed_at": "2026-10-31T16:33:44+00:00",
-        "fetched_at": "2026-10-31T17:08:31.369871+00:00",
+        "observed_at": "2026-10-31T17:33:42+00:00",
+        "fetched_at": "2026-10-31T18:12:10.105549+00:00",
         "unit_price_copper": 190000,
         "median_copper": 252300,
         "total_quantity": 2247,
         "auction_count": 48,
         "history": [
-          {
-            "at": "2026-10-24T18:00:00+00:00",
-            "min_copper": 190000,
-            "median_copper": 253900,
-            "quantity": 665
-          },
           {
             "at": "2026-10-24T19:00:00+00:00",
             "min_copper": 190000,
@@ -12807,6 +12801,12 @@
             "min_copper": 190000,
             "median_copper": 252300,
             "quantity": 2247
+          },
+          {
+            "at": "2026-10-31T17:00:00+00:00",
+            "min_copper": 190000,
+            "median_copper": 252300,
+            "quantity": 2247
           }
         ],
         "source": "AHledger",
@@ -12822,19 +12822,13 @@
         "name": "Raw Nightfin Snapper",
         "market": "retail-commodities.normal.neutral.us",
         "status": "fresh",
-        "observed_at": "2026-10-31T16:33:44+00:00",
-        "fetched_at": "2026-10-31T17:08:31.369871+00:00",
+        "observed_at": "2026-10-31T17:33:42+00:00",
+        "fetched_at": "2026-10-31T18:12:10.105549+00:00",
         "unit_price_copper": 114800,
         "median_copper": 999900,
-        "total_quantity": 728,
+        "total_quantity": 721,
         "auction_count": 50,
         "history": [
-          {
-            "at": "2026-10-24T18:00:00+00:00",
-            "min_copper": 118700,
-            "median_copper": 1898900,
-            "quantity": 642
-          },
           {
             "at": "2026-10-24T19:00:00+00:00",
             "min_copper": 118700,
@@ -13824,6 +13818,12 @@
             "min_copper": 114800,
             "median_copper": 999900,
             "quantity": 728
+          },
+          {
+            "at": "2026-10-31T17:00:00+00:00",
+            "min_copper": 114800,
+            "median_copper": 999900,
+            "quantity": 721
           }
         ],
         "source": "AHledger",
@@ -13839,19 +13839,13 @@
         "name": "Rockfang Leather",
         "market": "retail-commodities.normal.neutral.us",
         "status": "fresh",
-        "observed_at": "2026-10-31T16:33:44+00:00",
-        "fetched_at": "2026-10-31T17:08:31.369871+00:00",
-        "unit_price_copper": 159500,
+        "observed_at": "2026-10-31T17:33:42+00:00",
+        "fetched_at": "2026-10-31T18:12:10.105549+00:00",
+        "unit_price_copper": 189500,
         "median_copper": 224500,
-        "total_quantity": 7004,
-        "auction_count": 48,
+        "total_quantity": 6947,
+        "auction_count": 33,
         "history": [
-          {
-            "at": "2026-10-24T18:00:00+00:00",
-            "min_copper": 235200,
-            "median_copper": 240000,
-            "quantity": 4711
-          },
           {
             "at": "2026-10-24T19:00:00+00:00",
             "min_copper": 235200,
@@ -14841,6 +14835,12 @@
             "min_copper": 159500,
             "median_copper": 224500,
             "quantity": 7004
+          },
+          {
+            "at": "2026-10-31T17:00:00+00:00",
+            "min_copper": 189500,
+            "median_copper": 224500,
+            "quantity": 6947
           }
         ],
         "source": "AHledger",
@@ -14856,19 +14856,13 @@
         "name": "Starfire Espresso",
         "market": "retail-commodities.normal.neutral.us",
         "status": "fresh",
-        "observed_at": "2026-10-31T16:33:44+00:00",
-        "fetched_at": "2026-10-31T17:08:31.369871+00:00",
+        "observed_at": "2026-10-31T17:33:42+00:00",
+        "fetched_at": "2026-10-31T18:12:10.105549+00:00",
         "unit_price_copper": 21100,
         "median_copper": 49500,
         "total_quantity": 159,
         "auction_count": 14,
         "history": [
-          {
-            "at": "2026-10-24T18:00:00+00:00",
-            "min_copper": 31100,
-            "median_copper": 57100,
-            "quantity": 296
-          },
           {
             "at": "2026-10-24T19:00:00+00:00",
             "min_copper": 31100,
@@ -15858,6 +15852,12 @@
             "min_copper": 21100,
             "median_copper": 49500,
             "quantity": 159
+          },
+          {
+            "at": "2026-10-31T17:00:00+00:00",
+            "min_copper": 21100,
+            "median_copper": 49500,
+            "quantity": 159
           }
         ],
         "source": "AHledger",
@@ -15883,8 +15883,8 @@
         "snapshot_cross_check": {
           "status": "fresh",
           "unit_price_copper": 174700,
-          "total_quantity": 268,
-          "observed_at": "2026-10-31T16:33:44+00:00"
+          "total_quantity": 270,
+          "observed_at": "2026-10-31T17:33:42+00:00"
         },
         "screen_result": "newer_price_rejects_discount"
       },
@@ -15901,8 +15901,8 @@
         "snapshot_cross_check": {
           "status": "fresh",
           "unit_price_copper": 50000,
-          "total_quantity": 294,
-          "observed_at": "2026-10-31T16:33:44+00:00"
+          "total_quantity": 299,
+          "observed_at": "2026-10-31T17:33:42+00:00"
         },
         "screen_result": "newer_price_rejects_discount"
       },
@@ -15919,8 +15919,8 @@
         "snapshot_cross_check": {
           "status": "fresh",
           "unit_price_copper": 51000,
-          "total_quantity": 264,
-          "observed_at": "2026-10-31T16:33:44+00:00"
+          "total_quantity": 276,
+          "observed_at": "2026-10-31T17:33:42+00:00"
         },
         "screen_result": "newer_price_rejects_discount"
       },
@@ -15936,9 +15936,9 @@
         "recommended_quantity": 0,
         "snapshot_cross_check": {
           "status": "fresh",
-          "unit_price_copper": 45000,
-          "total_quantity": 296,
-          "observed_at": "2026-10-31T16:33:44+00:00"
+          "unit_price_copper": 49900,
+          "total_quantity": 318,
+          "observed_at": "2026-10-31T17:33:42+00:00"
         },
         "screen_result": "newer_price_rejects_discount"
       },
@@ -15955,8 +15955,8 @@
         "snapshot_cross_check": {
           "status": "fresh",
           "unit_price_copper": 18800,
-          "total_quantity": 85,
-          "observed_at": "2026-10-31T16:33:44+00:00"
+          "total_quantity": 87,
+          "observed_at": "2026-10-31T17:33:42+00:00"
         },
         "screen_result": "newer_price_rejects_discount"
       },
@@ -15972,9 +15972,9 @@
         "recommended_quantity": 0,
         "snapshot_cross_check": {
           "status": "fresh",
-          "unit_price_copper": 25000,
-          "total_quantity": 642,
-          "observed_at": "2026-10-31T16:33:44+00:00"
+          "unit_price_copper": 23400,
+          "total_quantity": 693,
+          "observed_at": "2026-10-31T17:33:42+00:00"
         },
         "screen_result": "newer_price_rejects_discount"
       },
@@ -15990,9 +15990,9 @@
         "recommended_quantity": 0,
         "snapshot_cross_check": {
           "status": "fresh",
-          "unit_price_copper": 29700,
-          "total_quantity": 607,
-          "observed_at": "2026-10-31T16:33:44+00:00"
+          "unit_price_copper": 25200,
+          "total_quantity": 654,
+          "observed_at": "2026-10-31T17:33:42+00:00"
         },
         "screen_result": "newer_price_rejects_discount"
       },
@@ -16009,8 +16009,8 @@
         "snapshot_cross_check": {
           "status": "fresh",
           "unit_price_copper": 9800,
-          "total_quantity": 11235,
-          "observed_at": "2026-10-31T16:33:44+00:00"
+          "total_quantity": 11279,
+          "observed_at": "2026-10-31T17:33:42+00:00"
         },
         "screen_result": "newer_price_rejects_discount"
       },
@@ -16026,9 +16026,9 @@
         "recommended_quantity": 0,
         "snapshot_cross_check": {
           "status": "fresh",
-          "unit_price_copper": 2200,
-          "total_quantity": 6101,
-          "observed_at": "2026-10-31T16:33:44+00:00"
+          "unit_price_copper": 2100,
+          "total_quantity": 6297,
+          "observed_at": "2026-10-31T17:33:42+00:00"
         },
         "screen_result": "newer_price_rejects_discount"
       },
@@ -16044,9 +16044,9 @@
         "recommended_quantity": 0,
         "snapshot_cross_check": {
           "status": "fresh",
-          "unit_price_copper": 8900,
-          "total_quantity": 1152,
-          "observed_at": "2026-10-31T16:33:44+00:00"
+          "unit_price_copper": 7400,
+          "total_quantity": 1808,
+          "observed_at": "2026-10-31T17:33:42+00:00"
         },
         "screen_result": "newer_price_rejects_discount"
       }
@@ -16056,9 +16056,9 @@
       "status": "fresh",
       "region": "us",
       "game": "retail",
-      "price_copper": 2847330000,
-      "observed_at": "2026-10-31T16:53:30+00:00",
-      "fetched_at": "2026-10-31T17:08:31.369871+00:00",
+      "price_copper": 2816400000,
+      "observed_at": "2026-10-31T17:53:30+00:00",
+      "fetched_at": "2026-10-31T18:12:10.105549+00:00",
       "source": "wowtoken.app",
       "source_url": "https://data.wowtoken.app/v2/current/retail.json"
     },
@@ -16079,7 +16079,7 @@
     },
     "status": "partial",
     "daily_brief": {
-      "generated_at": "2026-10-31T17:08:31.369871+00:00",
+      "generated_at": "2026-10-31T18:12:10.105549+00:00",
       "time_limit_minutes": 15,
       "session_cap_copper": 10000000,
       "status": "skip",
@@ -16091,12 +16091,74 @@
       ],
       "reason": "No current, corroborated vendor-reference lot fits the limits"
     },
+    "trading_plan": {
+      "generated_at": "2026-10-31T18:12:10.105549+00:00",
+      "policy": {
+        "bankroll_copper": 2000000000,
+        "reserve_copper": 400000000,
+        "session_cap_copper": 400000000,
+        "position_cap_copper": 200000000,
+        "horizon_days": 7,
+        "maximum_hold_hours": 48,
+        "posting_duration_hours": 12,
+        "minimum_lot_profit_copper": 1000000,
+        "maximum_tasks": 3,
+        "auction_cut_bps": 500,
+        "deposit_allowance_unit_copper": 10000
+      },
+      "quote_checks": [
+        {
+          "item_id": 193254,
+          "name": "Rockfang Leather",
+          "kind": "auction_resale_quote",
+          "quantity": 69,
+          "maximum_unit_copper": 112555,
+          "maximum_total_copper": 7766295,
+          "post_unit_copper": 152702,
+          "minimum_post_unit_copper": 129006,
+          "projected_profit_at_cap_copper": 1553259,
+          "snapshot_unit_copper": 189500,
+          "snapshot_at": "2026-10-31T17:33:42+00:00",
+          "regional_sold_per_day": "1438.086",
+          "regional_sale_rate": "0.206",
+          "history_samples": 166,
+          "maximum_hold_hours": 48,
+          "posting_duration_hours": 12,
+          "quote_required": true,
+          "sale_guaranteed": false,
+          "snapshot_within_limit": false
+        },
+        {
+          "item_id": 42225,
+          "name": "Dragon's Eye",
+          "kind": "auction_resale_quote",
+          "quantity": 5,
+          "maximum_unit_copper": 5332249,
+          "maximum_total_copper": 26661245,
+          "post_unit_copper": 6745999,
+          "minimum_post_unit_copper": 5623421,
+          "projected_profit_at_cap_copper": 5332250,
+          "snapshot_unit_copper": 9480000,
+          "snapshot_at": "2026-10-31T17:33:42+00:00",
+          "regional_sold_per_day": "114.362",
+          "regional_sale_rate": "0.271",
+          "history_samples": 166,
+          "maximum_hold_hours": 48,
+          "posting_duration_hours": 12,
+          "quote_required": true,
+          "sale_guaranteed": false,
+          "snapshot_within_limit": false
+        }
+      ],
+      "status": "collect_quotes",
+      "reason": "Check exact live totals; these are conditional resale experiments, not guaranteed sales"
+    },
     "community": [
       {
         "provider": "r/woweconomy",
         "source_url": "https://www.reddit.com/r/woweconomy/new/.rss",
         "status": "available",
-        "fetched_at": "2026-10-31T17:00:20.598022+00:00",
+        "fetched_at": "2026-10-31T18:12:10.105549+00:00",
         "entries": [
           {
             "title": "Weekly: I Screwed Up Saturday",
@@ -16139,7 +16201,7 @@
         "provider": "TSM Blog",
         "source_url": "https://blog.tradeskillmaster.com/feed/",
         "status": "unavailable",
-        "fetched_at": "2026-10-31T17:08:31.369871+00:00",
+        "fetched_at": "2026-10-31T18:12:10.105549+00:00",
         "entries": [],
         "message": "HTTP Error 403: Forbidden"
       }
