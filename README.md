@@ -4,6 +4,8 @@ A research-only WoW Retail market scanner for Proudmoore-US. Runs without a gami
 
 [Repository](https://github.com/rclee/proudmoore-market-scanner) · [Hourly runs and report downloads](https://github.com/rclee/proudmoore-market-scanner/actions/workflows/scan.yml) · [Initial data findings](docs/DATA_VALIDATION.md)
 
+**Daily phone page:** [Proudmoore Daily Gold](https://proudmoore-daily-gold.airofcozy.chatgpt.site) (owner-private; sign in with the owner's ChatGPT account). It shows a skip-first decision, a local vendor-profit checker, TSM shopping setup, and up to three optional commodity research leads. No verified vendor deals are currently supplied by the public feeds, which lack vendor sell values.
+
 **This first milestone produces a watchlist, not actionable purchase recommendations.** It cannot prove that an auction sells, verify current listing depth or equipment variants, read your inventory, or guarantee subscription funding.
 
 ## Run locally
@@ -47,7 +49,7 @@ Require regional sale rate >= 0.10 and sold per day >= 1. These are provisional 
 
 Each scan preserves at most 100 shortlisted observations; rows expire after 35 days. This is **not full market history**. State failure stops collection rather than silently starting over. A failed download writes an unavailable report and exits nonzero. Stale data is labelled and also causes a failed run. The HTML checks source expiration while open, including when it is an older downloaded artifact.
 
-The repository is public, as requested by its owner to use standard public-repository runners after an account billing restriction blocked private runs. Include only public market data; never add personal transactions or credentials. In GitHub, open **Actions → Market scan → latest successful run** to read the validation summary and download its report artifact (GitHub sign-in may be required). Extract the ZIP and open `index.html`. This first version is not a hosted phone dashboard; hosting is a separate next step.
+The repository is public, as requested by its owner to use standard public-repository runners after an account billing restriction blocked private runs. Include only public market data; never add personal transactions or credentials. In GitHub, open **Actions → Market scan → latest successful run** to read the validation summary and download its full report artifact (GitHub sign-in may be required). The separate `scanner-report` branch publishes only the generated report JSON and HTML; the phone page fetches its public JSON every five minutes while open. Failed collection reports also replace that public feed. Durable history remains on `scanner-state`.
 
 GitHub schedules can be late or skipped, and public schedules may be disabled after 60 days without repository activity. The dashboard must not be treated as a live quote. [GitHub schedule documentation](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)
 
@@ -56,7 +58,7 @@ GitHub schedules can be late or skipped, and public schedules may be disabled af
 1. Collect 7–14 days and inspect candidate persistence; do not simulate completed sales from disappearing listings.
 2. Add Blizzard OAuth credentials in GitHub Secrets; resolve Proudmoore's connected realm and inspect exact auctions, quantities, quality, and modifiers. No Blizzard credentials are required for this milestone.
 3. Add a verified whitelist, private inventory ledger, and allocation across capital/reserve/item exposure limits; then consider actionable candidates.
-4. Add the current US token price with timestamp and private phone hosting. Review upstream redistribution terms before making any report public.
+4. Add the current US token price with timestamp. Owner-private phone hosting is live; calculator inputs stay local to the page. Public report data contains no personal transactions or credentials.
 5. Install addons after choosing to subscribe; import a real Journalator CSV sample, deduplicate records, reconcile fees and cost basis, and track realized profit separately from unsold inventory.
 6. Run a two-week manual trading trial with a proposed 4,000g loss limit and 15-minute session limit. Reassess the target using the actual token price.
 
