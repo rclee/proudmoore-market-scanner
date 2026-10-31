@@ -1,0 +1,10 @@
+[project]
+name = "proudmoore-market-scanner"
+version = "0.1.0"
+description = "Research-only WoW Retail auction market scanner"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.pyright]
+pythonVersion = "3.11"
+typeCheckingMode = "standard"

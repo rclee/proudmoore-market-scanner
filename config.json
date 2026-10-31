@@ -1,0 +1,18 @@
+{
+  "region": "us",
+  "realm": "proudmoore",
+  "budget_gold": 40000,
+  "reserve_gold": 10000,
+  "max_unit_cost_gold": 4000,
+  "max_item_exposure_gold": 4000,
+  "minimum_return_bps": 2000,
+  "auction_cut_bps": 500,
+  "resale_markdown_bps": 1000,
+  "lost_deposit_allowance_gold": 1,
+  "minimum_sale_rate": "0.10",
+  "minimum_sold_per_day": "1",
+  "market_max_age_hours": 6,
+  "region_max_age_hours": 48,
+  "history_days": 35,
+  "max_watchlist_items": 100
+}

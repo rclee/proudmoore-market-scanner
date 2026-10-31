@@ -1,0 +1,92 @@
+name: Market scan
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '47 * * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m unittest discover -s tests -v
+      - run: python -m compileall -q scanner tests
+
+  scan:
+    if: github.event_name != 'pull_request'
+    needs: checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    concurrency:
+      group: market-state
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Restore durable observation history
+        shell: bash
+        run: |
+          mkdir -p state
+          set +e
+          git ls-remote --exit-code --heads origin scanner-state > "$RUNNER_TEMP/state-ref"
+          status=$?
+          set -e
+          if [ "$status" -eq 0 ]; then
+            git fetch --no-tags --depth=1 origin scanner-state
+            git show FETCH_HEAD:market.sqlite3 > state/market.sqlite3
+            echo "STATE_PARENT=$(git rev-parse FETCH_HEAD)" >> "$GITHUB_ENV"
+          elif [ "$status" -ne 2 ]; then
+            echo 'Could not inspect remote state; refusing to overwrite history.' >&2
+            exit 1
+          fi
+      - name: Collect and validate live feeds
+        id: collect
+        run: python -m scanner
+      - name: Persist history on separate branch
+        if: success()
+        shell: bash
+        run: |
+          export GIT_INDEX_FILE="$RUNNER_TEMP/market-state-index"
+          git read-tree --empty
+          blob=$(git hash-object -w state/market.sqlite3)
+          git update-index --add --cacheinfo "100644,$blob,market.sqlite3"
+          tree=$(git write-tree)
+          parent_args=()
+          if [ -n "${STATE_PARENT:-}" ]; then
+            if [ "$tree" = "$(git rev-parse "$STATE_PARENT^{tree}")" ]; then
+              echo 'History unchanged.'
+              exit 0
+            fi
+            parent_args=(-p "$STATE_PARENT")
+          fi
+          commit=$(printf 'Update bounded market history\n' | git -c user.name='market-scanner[bot]' -c user.email='market-scanner@users.noreply.github.com' commit-tree "$tree" "${parent_args[@]}")
+          git push origin "$commit:refs/heads/scanner-state"
+      - name: Publish private report artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: market-report-${{ github.run_number }}
+          path: output/live/
+          retention-days: 14
+          if-no-files-found: warn
+      - name: Write run summary
+        if: always()
+        shell: bash
+        run: |
+          if [ -f output/live/validation.md ]; then
+            cat output/live/validation.md >> "$GITHUB_STEP_SUMMARY"
+          fi
