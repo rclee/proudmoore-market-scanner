@@ -32,4 +32,4 @@ The oldest input was the regional daily file, about 31 hours old. The initial to
 - Realized net profit, costs, and time spent: requires the manual trading trial and Journalator reconciliation.
 - Token affordability: no current token feed is connected.
 
-The gaming PC can stay off while the cloud collects future observations. Report artifacts remain private; no personal transaction data is uploaded.
+The gaming PC can stay off while the cloud collects future observations. The user subsequently selected a public repository; reports contain public market observations and no personal transactions.

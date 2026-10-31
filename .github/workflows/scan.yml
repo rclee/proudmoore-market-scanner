@@ -75,7 +75,7 @@ jobs:
           fi
           commit=$(printf 'Update bounded market history\n' | git -c user.name='market-scanner[bot]' -c user.email='market-scanner@users.noreply.github.com' commit-tree "$tree" "${parent_args[@]}")
           git push origin "$commit:refs/heads/scanner-state"
-      - name: Publish private report artifact
+      - name: Publish market report artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:

@@ -11,6 +11,6 @@ Implement the first milestone of the implementation plan agreed in chat on 2026-
 - All results are research-only: no actionable buys or quantity recommendations until exact item identity, current listings, inventory, and sufficient history have been verified. No automatic trades.
 - A stale or invalid feed must be visible. Unknown schemas and corrupted state must fail safely. A failed run must replace any report with an unavailable report rather than retain actionable results.
 - Provide an explicitly labelled synthetic demo and automated checks of financial and ingestion boundaries.
-- Run hourly in GitHub Actions, restore durable state from a dedicated branch, publish report artifacts, and support manual runs. Never place tokens, credentials, or personal transactions in reports.
+- Run hourly in GitHub Actions, restore durable state from a dedicated branch, publish report artifacts, and support manual runs. Never place tokens, credentials, or personal transactions in reports. The user explicitly selected public repository visibility on 2026-10-31 after private runners were blocked by account billing.
 
 Deferred: Blizzard OAuth and live auction depth, token price integration, verified item whitelist, Journalator import and cost-basis accounting, private hosted dashboard, actionable recommendations, daily aggregates, and profitability evaluation after a real trading trial.

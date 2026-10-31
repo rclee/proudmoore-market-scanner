@@ -19,7 +19,7 @@ Two finding groups: failure reporting missed non-object configuration and CSV pa
 
 ## Cloud verification
 
-The private repository was created and the workflow was accepted. The first GitHub job did not receive a runner because GitHub reported failed account payments or a spending-limit restriction. No cloud collection has completed; hourly collection is configured but blocked by that account condition.
+The private repository was created and the workflow was accepted. The first GitHub job did not receive a runner because GitHub reported failed account payments or a spending-limit restriction. The user explicitly chose to make the repository public. After that change, the first [public hosted run](https://github.com/rclee/proudmoore-market-scanner/actions/runs/41218753221) completed successfully, including all behavioral checks, restoration of the seeded history, live collection, state persistence, and report upload.
 
 The exact workflow Bash scripts were separately exercised against a temporary local bare Git repository: first-run initialization, state-branch creation/push, byte-identical SQLite restore, and unchanged-state skip all passed. This validates the persistence scripts but does not substitute for a successful hosted run.
 

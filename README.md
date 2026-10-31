@@ -2,6 +2,8 @@
 
 A research-only WoW Retail market scanner for Proudmoore-US. Runs without a gaming PC or active WoW subscription. Python 3.11+; no third-party Python dependencies.
 
+[Repository](https://github.com/rclee/proudmoore-market-scanner) · [Hourly runs and report downloads](https://github.com/rclee/proudmoore-market-scanner/actions/workflows/scan.yml) · [Initial data findings](docs/DATA_VALIDATION.md)
+
 **This first milestone produces a watchlist, not actionable purchase recommendations.** It cannot prove that an auction sells, verify current listing depth or equipment variants, read your inventory, or guarantee subscription funding.
 
 ## Run locally
@@ -45,9 +47,9 @@ Require regional sale rate >= 0.10 and sold per day >= 1. These are provisional 
 
 Each scan preserves at most 100 shortlisted observations; rows expire after 35 days. This is **not full market history**. State failure stops collection rather than silently starting over. A failed download writes an unavailable report and exits nonzero. Stale data is labelled and also causes a failed run. The HTML checks source expiration while open, including when it is an older downloaded artifact.
 
-The repository and Actions artifacts are private. In GitHub, open **Actions → Market scan → latest run** to read the validation summary and download its report artifact. Extract the ZIP and open `index.html`. This first version is not a hosted phone dashboard; private hosting is a separate next step.
+The repository is public, as requested by its owner to use standard public-repository runners after an account billing restriction blocked private runs. Include only public market data; never add personal transactions or credentials. In GitHub, open **Actions → Market scan → latest successful run** to read the validation summary and download its report artifact (GitHub sign-in may be required). Extract the ZIP and open `index.html`. This first version is not a hosted phone dashboard; hosting is a separate next step.
 
-GitHub schedules can be late or skipped, and usage is subject to the account's included Actions minutes. Budget for approximately 720 hourly runs per 30 days plus checks; inspect actual usage after the first day. [GitHub schedule documentation](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)
+GitHub schedules can be late or skipped, and public schedules may be disabled after 60 days without repository activity. The dashboard must not be treated as a live quote. [GitHub schedule documentation](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)
 
 ## Next milestones
 
