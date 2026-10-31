@@ -22,6 +22,7 @@ from urllib.parse import urlsplit
 
 from scanner.data import FeedError, fetch_feed, number, timestamp
 from scanner.report import write_reports
+from scanner.trading import trading_plan
 
 MARKET = "retail-commodities.normal.neutral.us"
 TOKEN_URL = "https://data.wowtoken.app/v2/current/retail.json"
@@ -344,6 +345,7 @@ def enrich_report(report: dict, cache: Cache, now: datetime) -> dict:
             extra["errors"].append({"source": f"AHledger item {item_id}", "message": str(exc)})
     extra["status"] = "partial" if extra["errors"] else "available"
     extra["daily_brief"] = daily_brief(extra["vendor_candidates"], now)
+    extra["trading_plan"] = trading_plan(report, extra, now)
     extra["community"] = []
     for provider, url in (("r/woweconomy", "https://www.reddit.com/r/woweconomy/new/.rss"),
                           ("TSM Blog", "https://blog.tradeskillmaster.com/feed/")):

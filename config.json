@@ -1,10 +1,10 @@
 {
   "region": "us",
   "realm": "proudmoore",
-  "budget_gold": 40000,
-  "reserve_gold": 10000,
+  "budget_gold": 200000,
+  "reserve_gold": 40000,
   "max_unit_cost_gold": 4000,
-  "max_item_exposure_gold": 4000,
+  "max_item_exposure_gold": 20000,
   "minimum_return_bps": 2000,
   "auction_cut_bps": 500,
   "resale_markdown_bps": 1000,
