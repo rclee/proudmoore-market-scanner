@@ -1,0 +1,300 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Proudmoore · Market Watch</title>
+<style>
+:root{color-scheme:dark;--bg:#101713;--panel:#19231c;--line:#334136;--text:#edf1e7;--muted:#a9b6a9;--accent:#d2ed91}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,sans-serif}
+main{max-width:1160px;margin:auto;padding:36px 24px 60px}.brand{letter-spacing:.18em;font-size:12px;color:var(--accent);font-weight:700}
+header{padding:32px 0 24px;border-bottom:1px solid var(--line)}h1{font-size:clamp(34px,6vw,60px);line-height:1.05;letter-spacing:-.045em;margin:12px 0 18px}
+.intro{max-width:650px;color:var(--muted)}.notice{margin:24px 0;padding:20px;border:1px solid #8c7942;background:#292719;border-radius:12px;color:#f0dda0}
+.notice strong{display:block}.notice p{margin-bottom:0}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0 36px}
+.stat{padding:18px;background:var(--panel);border:1px solid var(--line);border-radius:12px}.stat small{display:block;color:var(--muted)}.stat strong{font-size:26px;font-weight:600}
+.section-head{display:flex;gap:12px;justify-content:space-between;align-items:center;flex-wrap:wrap}h2{font-size:24px;margin:0}button{background:transparent;color:var(--text);border:1px solid var(--line);border-radius:20px;padding:8px 14px;cursor:pointer}
+button[aria-pressed=true]{background:var(--accent);color:#182011}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:20px}article{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:22px}
+.card-top{display:flex;justify-content:space-between;align-items:center}.rank{color:var(--muted);font-size:13px}.tag{font-size:10px;letter-spacing:.12em;color:var(--accent);border:1px solid #526442;padding:4px 8px;border-radius:20px}
+h3{font-size:20px;line-height:1.3;margin:18px 0 4px}.muted,.timestamp{color:var(--muted);font-size:12px}.prices{display:grid;grid-template-columns:1fr 1fr;gap:12px;border-top:1px solid var(--line);padding-top:18px;margin-top:22px}
+.prices small{display:block;font-size:11px;color:var(--muted)}.prices strong{font-size:19px}dl{font-size:12px;margin:20px 0}dl div{display:flex;justify-content:space-between;gap:12px;padding:6px 0}dt{color:var(--muted)}dd{margin:0;text-align:right}
+details{border-top:1px solid var(--line);padding-top:14px;font-size:12px;color:var(--muted)}summary{cursor:pointer;color:var(--text)}li{margin:8px 0}.sources{margin-top:40px;border-top:1px solid var(--line);padding-top:24px}
+.sources ul{padding:0;list-style:none}.sources li{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;border-bottom:1px solid var(--line);padding:12px 0;font-size:12px}.sources em{color:var(--accent);font-style:normal}
+footer{color:var(--muted);font-size:12px;margin-top:30px}a{color:var(--accent)}.empty{padding:40px 20px;border:1px dashed var(--line);margin-top:20px;border-radius:12px;color:var(--muted)}[hidden]{display:none!important}
+@media(max-width:950px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){main{padding:20px 16px 40px}.grid{grid-template-columns:1fr}.stats{gap:8px}.stat{padding:12px}.stat strong{font-size:20px}}
+</style></head><body><main><div class="brand">PROUDMOORE / MARKET WATCH</div><header>
+<h1>A shorter auction session.<br>A clearer decision.</h1><p class="intro">A small research watchlist for Retail on Proudmoore-US. Review the evidence, verify prices in game, and keep your playtime.</p></header>
+<div class="notice" role="status"><strong>LIVE FEEDS · RESEARCH ONLY</strong><span id="health">Status: watch_only.</span>
+<p>No purchases recommended yet. Listing depth, exact variants, your inventory, and trading results still need validation. Projected profits assume a successful sale.</p></div>
+<div class="stats"><div class="stat"><small>Trading capital</small><strong>40,000g</strong></div>
+<div class="stat"><small>Cash held back</small><strong>10,000g</strong></div>
+<div class="stat"><small>Daily session cap</small><strong>15 min</strong></div></div>
+<section><div class="section-head"><h2>Research watchlist</h2><div role="group" aria-label="Market filter">
+<button aria-pressed="true" data-filter="all">All</button> <button aria-pressed="false" data-filter="commodities">US commodities</button>
+<button aria-pressed="false" data-filter="realm">Proudmoore items</button></div></div>
+<p class="muted">Showing up to 100 candidates, ranked by projected profit per unit. Regional demand is not your personal chance of a sale.</p>
+<div class="grid"><article data-scope="realm">
+<div class="card-top"><span class="rank">01</span><span class="tag">WATCH ONLY</span></div>
+<h3>Tarnished Dawnlit Signet</h3><p class="muted">Proudmoore-US items · Item 258909</p>
+<div class="prices"><div><small>Snapshot buy price</small><strong>500.00g</strong></div>
+<div><small>Research buy ceiling</small><strong>669.27g</strong></div></div>
+<dl><div><dt>Conservative resale</dt><dd>846.45g</dd></div>
+<div><dt>Projected net / unit if sold</dt><dd>303.13g</dd></div>
+<div><dt>Return on purchase cost</dt><dd>60.6%</dd></div>
+<div><dt>Regional sale rate estimate</dt><dd>0.246</dd></div>
+<div><dt>Regional sold / day estimate</dt><dd>5.412</dd></div>
+<div><dt>Recommended purchase</dt><dd>0 units · pending validation</dd></div></dl>
+<p class="timestamp">Market scan: 2026-10-31T14:32:23+00:00<br>Demand scan: 2026-10-30T08:44:47+00:00</p>
+<details><summary>What still needs checking</summary><ul><li>Current listing price and available quantity not verified</li><li>No verified whitelist or inventory balance</li><li>Regional demand estimate; Proudmoore sell-through unproven</li><li>7–14 day market validation not completed</li><li>Base item CSV does not verify equipment or other item variants</li></ul></details></article><article data-scope="realm">
+<div class="card-top"><span class="rank">02</span><span class="tag">WATCH ONLY</span></div>
+<h3>Tarnished Dawnlit Corsair&#x27;s Shroud</h3><p class="muted">Proudmoore-US items · Item 266208</p>
+<div class="prices"><div><small>Snapshot buy price</small><strong>450.99g</strong></div>
+<div><small>Research buy ceiling</small><strong>567.27g</strong></div></div>
+<dl><div><dt>Conservative resale</dt><dd>717.61g</dd></div>
+<div><dt>Projected net / unit if sold</dt><dd>229.74g</dd></div>
+<div><dt>Return on purchase cost</dt><dd>50.9%</dd></div>
+<div><dt>Regional sale rate estimate</dt><dd>0.111</dd></div>
+<div><dt>Regional sold / day estimate</dt><dd>1.554</dd></div>
+<div><dt>Recommended purchase</dt><dd>0 units · pending validation</dd></div></dl>
+<p class="timestamp">Market scan: 2026-10-31T14:32:23+00:00<br>Demand scan: 2026-10-30T08:44:47+00:00</p>
+<details><summary>What still needs checking</summary><ul><li>Current listing price and available quantity not verified</li><li>No verified whitelist or inventory balance</li><li>Regional demand estimate; Proudmoore sell-through unproven</li><li>7–14 day market validation not completed</li><li>Base item CSV does not verify equipment or other item variants</li></ul></details></article><article data-scope="realm">
+<div class="card-top"><span class="rank">03</span><span class="tag">WATCH ONLY</span></div>
+<h3>Sin&#x27;dorei Hunter&#x27;s Pack</h3><p class="muted">Proudmoore-US items · Item 244622</p>
+<div class="prices"><div><small>Snapshot buy price</small><strong>100.17g</strong></div>
+<div><small>Research buy ceiling</small><strong>268.23g</strong></div></div>
+<dl><div><dt>Conservative resale</dt><dd>339.87g</dd></div>
+<div><dt>Projected net / unit if sold</dt><dd>221.70g</dd></div>
+<div><dt>Return on purchase cost</dt><dd>221.3%</dd></div>
+<div><dt>Regional sale rate estimate</dt><dd>0.145</dd></div>
+<div><dt>Regional sold / day estimate</dt><dd>1.45</dd></div>
+<div><dt>Recommended purchase</dt><dd>0 units · pending validation</dd></div></dl>
+<p class="timestamp">Market scan: 2026-10-31T14:32:23+00:00<br>Demand scan: 2026-10-30T08:44:47+00:00</p>
+<details><summary>What still needs checking</summary><ul><li>Current listing price and available quantity not verified</li><li>No verified whitelist or inventory balance</li><li>Regional demand estimate; Proudmoore sell-through unproven</li><li>7–14 day market validation not completed</li><li>Base item CSV does not verify equipment or other item variants</li></ul></details></article><article data-scope="commodities">
+<div class="card-top"><span class="rank">04</span><span class="tag">WATCH ONLY</span></div>
+<h3>Dragon&#x27;s Eye</h3><p class="muted">US commodities · Item 42225</p>
+<div class="prices"><div><small>Snapshot buy price</small><strong>500.00g</strong></div>
+<div><small>Research buy ceiling</small><strong>533.22g</strong></div></div>
+<dl><div><dt>Conservative resale</dt><dd>674.60g</dd></div>
+<div><dt>Projected net / unit if sold</dt><dd>139.87g</dd></div>
+<div><dt>Return on purchase cost</dt><dd>28.0%</dd></div>
+<div><dt>Regional sale rate estimate</dt><dd>0.271</dd></div>
+<div><dt>Regional sold / day estimate</dt><dd>114.362</dd></div>
+<div><dt>Recommended purchase</dt><dd>0 units · pending validation</dd></div></dl>
+<p class="timestamp">Market scan: 2026-10-31T14:33:41+00:00<br>Demand scan: 2026-10-30T08:44:47+00:00</p>
+<details><summary>What still needs checking</summary><ul><li>Current listing price and available quantity not verified</li><li>No verified whitelist or inventory balance</li><li>Regional demand estimate; Proudmoore sell-through unproven</li><li>7–14 day market validation not completed</li></ul></details></article><article data-scope="realm">
+<div class="card-top"><span class="rank">05</span><span class="tag">WATCH ONLY</span></div>
+<h3>Elegant Artisan&#x27;s Herbalism Hat</h3><p class="muted">Proudmoore-US items · Item 239639</p>
+<div class="prices"><div><small>Snapshot buy price</small><strong>100.70g</strong></div>
+<div><small>Research buy ceiling</small><strong>184.67g</strong></div></div>
+<dl><div><dt>Conservative resale</dt><dd>234.33g</dd></div>
+<div><dt>Projected net / unit if sold</dt><dd>120.91g</dd></div>
+<div><dt>Return on purchase cost</dt><dd>120.1%</dd></div>
+<div><dt>Regional sale rate estimate</dt><dd>0.266</dd></div>
+<div><dt>Regional sold / day estimate</dt><dd>2.926</dd></div>
+<div><dt>Recommended purchase</dt><dd>0 units · pending validation</dd></div></dl>
+<p class="timestamp">Market scan: 2026-10-31T14:32:23+00:00<br>Demand scan: 2026-10-30T08:44:47+00:00</p>
+<details><summary>What still needs checking</summary><ul><li>Current listing price and available quantity not verified</li><li>No verified whitelist or inventory balance</li><li>Regional demand estimate; Proudmoore sell-through unproven</li><li>7–14 day market validation not completed</li><li>Base item CSV does not verify equipment or other item variants</li></ul></details></article><article data-scope="realm">
+<div class="card-top"><span class="rank">06</span><span class="tag">WATCH ONLY</span></div>
+<h3>Tarnished Dawnlit Commander&#x27;s Armplates</h3><p class="muted">Proudmoore-US items · Item 258943</p>
+<div class="prices"><div><small>Snapshot buy price</small><strong>55.77g</strong></div>
+<div><small>Research buy ceiling</small><strong>138.34g</strong></div></div>
+<dl><div><dt>Conservative resale</dt><dd>175.80g</dd></div>
+<div><dt>Projected net / unit if sold</dt><dd>110.24g</dd></div>
+<div><dt>Return on purchase cost</dt><dd>197.7%</dd></div>
+<div><dt>Regional sale rate estimate</dt><dd>0.161</dd></div>
+<div><dt>Regional sold / day estimate</dt><dd>4.186</dd></div>
+<div><dt>Recommended purchase</dt><dd>0 units · pending validation</dd></div></dl>
+<p class="timestamp">Market scan: 2026-10-31T14:32:23+00:00<br>Demand scan: 2026-10-30T08:44:47+00:00</p>
+<details><summary>What still needs checking</summary><ul><li>Current listing price and available quantity not verified</li><li>No verified whitelist or inventory balance</li><li>Regional demand estimate; Proudmoore sell-through unproven</li><li>7–14 day market validation not completed</li><li>Base item CSV does not verify equipment or other item variants</li></ul></details></article><article data-scope="realm">
+<div class="card-top"><span class="rank">07</span><span class="tag">WATCH ONLY</span></div>
+<h3>Tarnished Dawnlit Commander&#x27;s Breastplate</h3><p class="muted">Proudmoore-US items · Item 258936</p>
+<div class="prices"><div><small>Snapshot buy price</small><strong>100.00g</strong></div>
+<div><small>Research buy ceiling</small><strong>167.47g</strong></div></div>
+<dl><div><dt>Conservative resale</dt><dd>212.60g</dd></div>
+<div><dt>Projected net / unit if sold</dt><dd>100.97g</dd></div>
+<div><dt>Return on purchase cost</dt><dd>101.0%</dd></div>
+<div><dt>Regional sale rate estimate</dt><dd>0.159</dd></div>
+<div><dt>Regional sold / day estimate</dt><dd>3.975</dd></div>
+<div><dt>Recommended purchase</dt><dd>0 units · pending validation</dd></div></dl>
+<p class="timestamp">Market scan: 2026-10-31T14:32:23+00:00<br>Demand scan: 2026-10-30T08:44:47+00:00</p>
+<details><summary>What still needs checking</summary><ul><li>Current listing price and available quantity not verified</li><li>No verified whitelist or inventory balance</li><li>Regional demand estimate; Proudmoore sell-through unproven</li><li>7–14 day market validation not completed</li><li>Base item CSV does not verify equipment or other item variants</li></ul></details></article><article data-scope="realm">
+<div class="card-top"><span class="rank">08</span><span class="tag">WATCH ONLY</span></div>
+<h3>Eversong Hunter&#x27;s Headcover</h3><p class="muted">Proudmoore-US items · Item 244623</p>
+<div class="prices"><div><small>Snapshot buy price</small><strong>50.67g</strong></div>
+<div><small>Research buy ceiling</small><strong>121.87g</strong></div></div>
+<dl><div><dt>Conservative resale</dt><dd>155.00g</dd></div>
+<div><dt>Projected net / unit if sold</dt><dd>95.58g</dd></div>
+<div><dt>Return on purchase cost</dt><dd>188.6%</dd></div>
+<div><dt>Regional sale rate estimate</dt><dd>0.152</dd></div>
+<div><dt>Regional sold / day estimate</dt><dd>1.824</dd></div>
+<div><dt>Recommended purchase</dt><dd>0 units · pending validation</dd></div></dl>
+<p class="timestamp">Market scan: 2026-10-31T14:32:23+00:00<br>Demand scan: 2026-10-30T08:44:47+00:00</p>
+<details><summary>What still needs checking</summary><ul><li>Current listing price and available quantity not verified</li><li>No verified whitelist or inventory balance</li><li>Regional demand estimate; Proudmoore sell-through unproven</li><li>7–14 day market validation not completed</li><li>Base item CSV does not verify equipment or other item variants</li></ul></details></article><article data-scope="realm">
+<div class="card-top"><span class="rank">09</span><span class="tag">WATCH ONLY</span></div>
+<h3>Tarnished Dawnlit Corsair&#x27;s Belt</h3><p class="muted">Proudmoore-US items · Item 258926</p>
+<div class="prices"><div><small>Snapshot buy price</small><strong>89.13g</strong></div>
+<div><small>Research buy ceiling</small><strong>138.45g</strong></div></div>
+<dl><div><dt>Conservative resale</dt><dd>175.94g</dd></div>
+<div><dt>Projected net / unit if sold</dt><dd>77.01g</dd></div>
+<div><dt>Return on purchase cost</dt><dd>86.4%</dd></div>
+<div><dt>Regional sale rate estimate</dt><dd>0.162</dd></div>
+<div><dt>Regional sold / day estimate</dt><dd>4.212</dd></div>
+<div><dt>Recommended purchase</dt><dd>0 units · pending validation</dd></div></dl>
+<p class="timestamp">Market scan: 2026-10-31T14:32:23+00:00<br>Demand scan: 2026-10-30T08:44:47+00:00</p>
+<details><summary>What still needs checking</summary><ul><li>Current listing price and available quantity not verified</li><li>No verified whitelist or inventory balance</li><li>Regional demand estimate; Proudmoore sell-through unproven</li><li>7–14 day market validation not completed</li><li>Base item CSV does not verify equipment or other item variants</li></ul></details></article><article data-scope="realm">
+<div class="card-top"><span class="rank">10</span><span class="tag">WATCH ONLY</span></div>
+<h3>Tarnished Dawnlit Spellbinder&#x27;s Bands</h3><p class="muted">Proudmoore-US items · Item 258919</p>
+<div class="prices"><div><small>Snapshot buy price</small><strong>20.00g</strong></div>
+<div><small>Research buy ceiling</small><strong>72.40g</strong></div></div>
+<dl><div><dt>Conservative resale</dt><dd>92.50g</dd></div>
+<div><dt>Projected net / unit if sold</dt><dd>66.88g</dd></div>
+<div><dt>Return on purchase cost</dt><dd>334.4%</dd></div>
+<div><dt>Regional sale rate estimate</dt><dd>0.118</dd></div>
+<div><dt>Regional sold / day estimate</dt><dd>3.068</dd></div>
+<div><dt>Recommended purchase</dt><dd>0 units · pending validation</dd></div></dl>
+<p class="timestamp">Market scan: 2026-10-31T14:32:23+00:00<br>Demand scan: 2026-10-30T08:44:47+00:00</p>
+<details><summary>What still needs checking</summary><ul><li>Current listing price and available quantity not verified</li><li>No verified whitelist or inventory balance</li><li>Regional demand estimate; Proudmoore sell-through unproven</li><li>7–14 day market validation not completed</li><li>Base item CSV does not verify equipment or other item variants</li></ul></details></article><article data-scope="realm">
+<div class="card-top"><span class="rank">11</span><span class="tag">WATCH ONLY</span></div>
+<h3>Tarnished Dawnlit Corsair&#x27;s Hood</h3><p class="muted">Proudmoore-US items · Item 258923</p>
+<div class="prices"><div><small>Snapshot buy price</small><strong>125.00g</strong></div>
+<div><small>Research buy ceiling</small><strong>158.59g</strong></div></div>
+<dl><div><dt>Conservative resale</dt><dd>201.38g</dd></div>
+<div><dt>Projected net / unit if sold</dt><dd>65.31g</dd></div>
+<div><dt>Return on purchase cost</dt><dd>52.2%</dd></div>
+<div><dt>Regional sale rate estimate</dt><dd>0.153</dd></div>
+<div><dt>Regional sold / day estimate</dt><dd>3.825</dd></div>
+<div><dt>Recommended purchase</dt><dd>0 units · pending validation</dd></div></dl>
+<p class="timestamp">Market scan: 2026-10-31T14:32:23+00:00<br>Demand scan: 2026-10-30T08:44:47+00:00</p>
+<details><summary>What still needs checking</summary><ul><li>Current listing price and available quantity not verified</li><li>No verified whitelist or inventory balance</li><li>Regional demand estimate; Proudmoore sell-through unproven</li><li>7–14 day market validation not completed</li><li>Base item CSV does not verify equipment or other item variants</li></ul></details></article><article data-scope="realm">
+<div class="card-top"><span class="rank">12</span><span class="tag">WATCH ONLY</span></div>
+<h3>Tarnished Dawnlit Sentinel&#x27;s Handguards</h3><p class="muted">Proudmoore-US items · Item 258930</p>
+<div class="prices"><div><small>Snapshot buy price</small><strong>100.00g</strong></div>
+<div><small>Research buy ceiling</small><strong>129.20g</strong></div></div>
+<dl><div><dt>Conservative resale</dt><dd>164.25g</dd></div>
+<div><dt>Projected net / unit if sold</dt><dd>55.04g</dd></div>
+<div><dt>Return on purchase cost</dt><dd>55.0%</dd></div>
+<div><dt>Regional sale rate estimate</dt><dd>0.118</dd></div>
+<div><dt>Regional sold / day estimate</dt><dd>3.422</dd></div>
+<div><dt>Recommended purchase</dt><dd>0 units · pending validation</dd></div></dl>
+<p class="timestamp">Market scan: 2026-10-31T14:32:23+00:00<br>Demand scan: 2026-10-30T08:44:47+00:00</p>
+<details><summary>What still needs checking</summary><ul><li>Current listing price and available quantity not verified</li><li>No verified whitelist or inventory balance</li><li>Regional demand estimate; Proudmoore sell-through unproven</li><li>7–14 day market validation not completed</li><li>Base item CSV does not verify equipment or other item variants</li></ul></details></article><article data-scope="realm">
+<div class="card-top"><span class="rank">13</span><span class="tag">WATCH ONLY</span></div>
+<h3>Tarnished Dawnlit Commander&#x27;s Greatbelt</h3><p class="muted">Proudmoore-US items · Item 258942</p>
+<div class="prices"><div><small>Snapshot buy price</small><strong>75.00g</strong></div>
+<div><small>Research buy ceiling</small><strong>104.15g</strong></div></div>
+<dl><div><dt>Conservative resale</dt><dd>132.61g</dd></div>
+<div><dt>Projected net / unit if sold</dt><dd>49.98g</dd></div>
+<div><dt>Return on purchase cost</dt><dd>66.6%</dd></div>
+<div><dt>Regional sale rate estimate</dt><dd>0.144</dd></div>
+<div><dt>Regional sold / day estimate</dt><dd>3.6</dd></div>
+<div><dt>Recommended purchase</dt><dd>0 units · pending validation</dd></div></dl>
+<p class="timestamp">Market scan: 2026-10-31T14:32:23+00:00<br>Demand scan: 2026-10-30T08:44:47+00:00</p>
+<details><summary>What still needs checking</summary><ul><li>Current listing price and available quantity not verified</li><li>No verified whitelist or inventory balance</li><li>Regional demand estimate; Proudmoore sell-through unproven</li><li>7–14 day market validation not completed</li><li>Base item CSV does not verify equipment or other item variants</li></ul></details></article><article data-scope="realm">
+<div class="card-top"><span class="rank">14</span><span class="tag">WATCH ONLY</span></div>
+<h3>Tarnished Dawnlit Corsair&#x27;s Breeches</h3><p class="muted">Proudmoore-US items · Item 258924</p>
+<div class="prices"><div><small>Snapshot buy price</small><strong>200.00g</strong></div>
+<div><small>Research buy ceiling</small><strong>205.86g</strong></div></div>
+<dl><div><dt>Conservative resale</dt><dd>261.08g</dd></div>
+<div><dt>Projected net / unit if sold</dt><dd>47.03g</dd></div>
+<div><dt>Return on purchase cost</dt><dd>23.5%</dd></div>
+<div><dt>Regional sale rate estimate</dt><dd>0.165</dd></div>
+<div><dt>Regional sold / day estimate</dt><dd>4.29</dd></div>
+<div><dt>Recommended purchase</dt><dd>0 units · pending validation</dd></div></dl>
+<p class="timestamp">Market scan: 2026-10-31T14:32:23+00:00<br>Demand scan: 2026-10-30T08:44:47+00:00</p>
+<details><summary>What still needs checking</summary><ul><li>Current listing price and available quantity not verified</li><li>No verified whitelist or inventory balance</li><li>Regional demand estimate; Proudmoore sell-through unproven</li><li>7–14 day market validation not completed</li><li>Base item CSV does not verify equipment or other item variants</li></ul></details></article><article data-scope="realm">
+<div class="card-top"><span class="rank">15</span><span class="tag">WATCH ONLY</span></div>
+<h3>Formula: Enchant Boots - Shaladrassil&#x27;s Roots</h3><p class="muted">Proudmoore-US items · Item 256747</p>
+<div class="prices"><div><small>Snapshot buy price</small><strong>100.50g</strong></div>
+<div><small>Research buy ceiling</small><strong>119.94g</strong></div></div>
+<dl><div><dt>Conservative resale</dt><dd>152.55g</dd></div>
+<div><dt>Projected net / unit if sold</dt><dd>43.42g</dd></div>
+<div><dt>Return on purchase cost</dt><dd>43.2%</dd></div>
+<div><dt>Regional sale rate estimate</dt><dd>0.187</dd></div>
+<div><dt>Regional sold / day estimate</dt><dd>1.683</dd></div>
+<div><dt>Recommended purchase</dt><dd>0 units · pending validation</dd></div></dl>
+<p class="timestamp">Market scan: 2026-10-31T14:32:23+00:00<br>Demand scan: 2026-10-30T08:44:47+00:00</p>
+<details><summary>What still needs checking</summary><ul><li>Current listing price and available quantity not verified</li><li>No verified whitelist or inventory balance</li><li>Regional demand estimate; Proudmoore sell-through unproven</li><li>7–14 day market validation not completed</li><li>Base item CSV does not verify equipment or other item variants</li></ul></details></article><article data-scope="realm">
+<div class="card-top"><span class="rank">16</span><span class="tag">WATCH ONLY</span></div>
+<h3>Tarnished Dawnlit Spellbinder&#x27;s Sash</h3><p class="muted">Proudmoore-US items · Item 258918</p>
+<div class="prices"><div><small>Snapshot buy price</small><strong>75.00g</strong></div>
+<div><small>Research buy ceiling</small><strong>85.85g</strong></div></div>
+<dl><div><dt>Conservative resale</dt><dd>109.50g</dd></div>
+<div><dt>Projected net / unit if sold</dt><dd>28.02g</dd></div>
+<div><dt>Return on purchase cost</dt><dd>37.4%</dd></div>
+<div><dt>Regional sale rate estimate</dt><dd>0.119</dd></div>
+<div><dt>Regional sold / day estimate</dt><dd>3.332</dd></div>
+<div><dt>Recommended purchase</dt><dd>0 units · pending validation</dd></div></dl>
+<p class="timestamp">Market scan: 2026-10-31T14:32:23+00:00<br>Demand scan: 2026-10-30T08:44:47+00:00</p>
+<details><summary>What still needs checking</summary><ul><li>Current listing price and available quantity not verified</li><li>No verified whitelist or inventory balance</li><li>Regional demand estimate; Proudmoore sell-through unproven</li><li>7–14 day market validation not completed</li><li>Base item CSV does not verify equipment or other item variants</li></ul></details></article><article data-scope="realm">
+<div class="card-top"><span class="rank">17</span><span class="tag">WATCH ONLY</span></div>
+<h3>Tarnished Dawnlit Corsair&#x27;s Bracers</h3><p class="muted">Proudmoore-US items · Item 258927</p>
+<div class="prices"><div><small>Snapshot buy price</small><strong>100.00g</strong></div>
+<div><small>Research buy ceiling</small><strong>106.49g</strong></div></div>
+<dl><div><dt>Conservative resale</dt><dd>135.57g</dd></div>
+<div><dt>Projected net / unit if sold</dt><dd>27.79g</dd></div>
+<div><dt>Return on purchase cost</dt><dd>27.8%</dd></div>
+<div><dt>Regional sale rate estimate</dt><dd>0.151</dd></div>
+<div><dt>Regional sold / day estimate</dt><dd>4.077</dd></div>
+<div><dt>Recommended purchase</dt><dd>0 units · pending validation</dd></div></dl>
+<p class="timestamp">Market scan: 2026-10-31T14:32:23+00:00<br>Demand scan: 2026-10-30T08:44:47+00:00</p>
+<details><summary>What still needs checking</summary><ul><li>Current listing price and available quantity not verified</li><li>No verified whitelist or inventory balance</li><li>Regional demand estimate; Proudmoore sell-through unproven</li><li>7–14 day market validation not completed</li><li>Base item CSV does not verify equipment or other item variants</li></ul></details></article><article data-scope="commodities">
+<div class="card-top"><span class="rank">18</span><span class="tag">WATCH ONLY</span></div>
+<h3>Majestic Zircon</h3><p class="muted">US commodities · Item 36925</p>
+<div class="prices"><div><small>Snapshot buy price</small><strong>10.00g</strong></div>
+<div><small>Research buy ceiling</small><strong>12.70g</strong></div></div>
+<dl><div><dt>Conservative resale</dt><dd>17.10g</dd></div>
+<div><dt>Projected net / unit if sold</dt><dd>5.25g</dd></div>
+<div><dt>Return on purchase cost</dt><dd>52.5%</dd></div>
+<div><dt>Regional sale rate estimate</dt><dd>0.302</dd></div>
+<div><dt>Regional sold / day estimate</dt><dd>683.124</dd></div>
+<div><dt>Recommended purchase</dt><dd>0 units · pending validation</dd></div></dl>
+<p class="timestamp">Market scan: 2026-10-31T14:33:41+00:00<br>Demand scan: 2026-10-30T08:44:47+00:00</p>
+<details><summary>What still needs checking</summary><ul><li>Current listing price and available quantity not verified</li><li>No verified whitelist or inventory balance</li><li>Regional demand estimate; Proudmoore sell-through unproven</li><li>7–14 day market validation not completed</li></ul></details></article><article data-scope="commodities">
+<div class="card-top"><span class="rank">19</span><span class="tag">WATCH ONLY</span></div>
+<h3>Raw Nightfin Snapper</h3><p class="muted">US commodities · Item 13759</p>
+<div class="prices"><div><small>Snapshot buy price</small><strong>2.49g</strong></div>
+<div><small>Research buy ceiling</small><strong>5.32g</strong></div></div>
+<dl><div><dt>Conservative resale</dt><dd>7.77g</dd></div>
+<div><dt>Projected net / unit if sold</dt><dd>3.89g</dd></div>
+<div><dt>Return on purchase cost</dt><dd>156.3%</dd></div>
+<div><dt>Regional sale rate estimate</dt><dd>0.228</dd></div>
+<div><dt>Regional sold / day estimate</dt><dd>171.456</dd></div>
+<div><dt>Recommended purchase</dt><dd>0 units · pending validation</dd></div></dl>
+<p class="timestamp">Market scan: 2026-10-31T14:33:41+00:00<br>Demand scan: 2026-10-30T08:44:47+00:00</p>
+<details><summary>What still needs checking</summary><ul><li>Current listing price and available quantity not verified</li><li>No verified whitelist or inventory balance</li><li>Regional demand estimate; Proudmoore sell-through unproven</li><li>7–14 day market validation not completed</li></ul></details></article><article data-scope="commodities">
+<div class="card-top"><span class="rank">20</span><span class="tag">WATCH ONLY</span></div>
+<h3>Rockfang Leather</h3><p class="muted">US commodities · Item 193254</p>
+<div class="prices"><div><small>Snapshot buy price</small><strong>10.64g</strong></div>
+<div><small>Research buy ceiling</small><strong>11.26g</strong></div></div>
+<dl><div><dt>Conservative resale</dt><dd>15.27g</dd></div>
+<div><dt>Projected net / unit if sold</dt><dd>2.87g</dd></div>
+<div><dt>Return on purchase cost</dt><dd>26.9%</dd></div>
+<div><dt>Regional sale rate estimate</dt><dd>0.206</dd></div>
+<div><dt>Regional sold / day estimate</dt><dd>1438.086</dd></div>
+<div><dt>Recommended purchase</dt><dd>0 units · pending validation</dd></div></dl>
+<p class="timestamp">Market scan: 2026-10-31T14:33:41+00:00<br>Demand scan: 2026-10-30T08:44:47+00:00</p>
+<details><summary>What still needs checking</summary><ul><li>Current listing price and available quantity not verified</li><li>No verified whitelist or inventory balance</li><li>Regional demand estimate; Proudmoore sell-through unproven</li><li>7–14 day market validation not completed</li></ul></details></article><article data-scope="commodities">
+<div class="card-top"><span class="rank">21</span><span class="tag">WATCH ONLY</span></div>
+<h3>Starfire Espresso</h3><p class="muted">US commodities · Item 62675</p>
+<div class="prices"><div><small>Snapshot buy price</small><strong>2.11g</strong></div>
+<div><small>Research buy ceiling</small><strong>2.69g</strong></div></div>
+<dl><div><dt>Conservative resale</dt><dd>4.46g</dd></div>
+<div><dt>Projected net / unit if sold</dt><dd>1.12g</dd></div>
+<div><dt>Return on purchase cost</dt><dd>53.2%</dd></div>
+<div><dt>Regional sale rate estimate</dt><dd>0.193</dd></div>
+<div><dt>Regional sold / day estimate</dt><dd>104.606</dd></div>
+<div><dt>Recommended purchase</dt><dd>0 units · pending validation</dd></div></dl>
+<p class="timestamp">Market scan: 2026-10-31T14:33:41+00:00<br>Demand scan: 2026-10-30T08:44:47+00:00</p>
+<details><summary>What still needs checking</summary><ul><li>Current listing price and available quantity not verified</li><li>No verified whitelist or inventory balance</li><li>Regional demand estimate; Proudmoore sell-through unproven</li><li>7–14 day market validation not completed</li></ul></details></article></div><p id="filter-empty" class="muted" hidden>No candidates in this market.</p></section>
+<section class="sources"><h2>Source health</h2><ul><li data-expiry='2026-10-31T20:32:23+00:00'><b>realm</b><span>17,257 rows · 2026-10-31T14:32:23+00:00</span><em>Fresh at scan</em></li><li data-expiry='2026-10-31T20:33:41+00:00'><b>commodities</b><span>10,977 rows · 2026-10-31T14:33:41+00:00</span><em>Fresh at scan</em></li><li data-expiry='2026-11-01T08:44:47+00:00'><b>region</b><span>29,995 rows · 2026-10-30T08:44:47+00:00</span><em>Fresh at scan</em></li></ul>
+<p class="muted">Report generated 2026-10-31T16:25:31.742778+00:00. Prices are snapshots, not live quotes. The page checks source expiry while open.</p></section>
+<footer>Research ceiling includes a 5% AH cut, 10% resale markdown, and 1g lost-deposit allowance per unit.
+These are configurable planning assumptions, not verified listing fees. No token price is connected yet.<br>
+Data: <a href="https://tradeskillmaster.com/public-data">TradeSkillMaster</a>. Unofficial fan project; no automated game actions.</footer></main>
+<script>
+document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{
+  document.querySelectorAll('[data-filter]').forEach(other=>other.setAttribute('aria-pressed',String(other===button)));
+  let visible=0;document.querySelectorAll('[data-scope]').forEach(card=>{
+    card.hidden=button.dataset.filter!=='all'&&card.dataset.scope!==button.dataset.filter;if(!card.hidden)visible++;
+  });document.getElementById('filter-empty').hidden=visible>0;
+}));
+function freshness(){let stale=false;document.querySelectorAll('[data-expiry]').forEach(source=>{
+  if(Date.now()>Date.parse(source.dataset.expiry)){source.querySelector('em').textContent='STALE';stale=true;}
+});if(stale)document.getElementById('health').textContent='STALE DATA · Refresh after a successful cloud scan.';}
+freshness();setInterval(freshness,60000);
+</script></body></html>
