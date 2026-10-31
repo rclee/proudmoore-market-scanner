@@ -83,6 +83,9 @@ jobs:
           path: output/live/
           retention-days: 14
           if-no-files-found: warn
+      - name: Publish current phone-page data
+        if: always() && steps.collect.outcome != 'skipped'
+        run: python -m scanner.publish
       - name: Write run summary
         if: always()
         shell: bash
