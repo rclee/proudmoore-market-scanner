@@ -5,7 +5,7 @@ The user's daily job is to read a short brief, execute bounded manual actions, a
 ## Market and capital
 
 - Retail, Proudmoore-US for non-commodities. Commodity orders are US-wide.
-- Original trading allocation: 40,000g with 10,000g held back. The daily vendor-check brief currently uses a smaller 1,000g combined session ceiling, up to three lots, at most 200 units per lot. Wallet/inventory remain unknown; ceilings are not actual holdings.
+- Current user allocation: 200,000g, superseding the original40,000g trial. Keep40,000g in reserve, initially buy at most40,000g/day, and cap each item at20,000g of recorded exposure. Wallet/inventory are user-reported, not fetched; the private browser ledger must not be treated as a live account connection.
 - No game automation or account access. Never issue a trade instruction from a social post alone.
 
 ## Evidence order
@@ -18,11 +18,11 @@ The user's daily job is to read a short brief, execute bounded manual actions, a
 
 ## Supported daily brief
 
-The enabled strategy is direct vendoring of a purchased commodity, conditional on live confirmation. Require a matching independent vendor reference, a fresh newer commodity snapshot below 80% of the reference, at least 10g profit at the permitted total, and all session/lot limits.
+The main trading desk supports conditional auction-resale experiments with modeled20% return on cost and at least100g modeled lot profit after cut/deposit allowance. Liquidity and historical price screens bound quantities and targets; the player supplies exact current lot quotes. Purchases become post tasks, 12-hour expiries become reassessment tasks, and48-hour inventory is reviewed. No sale is guaranteed. Vendor screening remains supporting research with its separate, smaller reference limits.
 
 Each conditional card supplies item identity, quantity to request, maximum whole-lot cost, required NPC payout, and snapshot time. If the current quote or exact payout differs, skip it. An unavailable/expired data check must replace buying instructions with skip instructions. Never infer completed transactions from vanished listings.
 
-When nothing qualifies, the entire brief is: collect the user's own completed-sales mail; make no new purchases; log off. Do not fill the schedule with weak trades.
+When no trade passes, request specific missing starting data, inventory, and live quotes. Failed quotes go into the private session report as observations, not purchases. Do not fill the schedule with weak trades. The user copies the report to this chat for the next review; the cloud has no private transaction access.
 
 ## Community hypotheses under consideration
 
