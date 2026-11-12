@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T23:05:32.518538+00:00",
+  "generated_at": "2026-11-12T04:19:04.322806+00:00",
   "mode": "live",
   "status": "unavailable",
   "feeds": [
@@ -15,11 +15,11 @@
         "historical",
         "updatedAt"
       ],
-      "row_count": 17070,
-      "source_time": "2026-11-11T21:21:24+00:00",
-      "fetched_at": "2026-11-11T23:05:32.518538+00:00",
-      "sha256": "589885b32f4f121449a79def52f5c08366b3b615c3b909f511b0f0f7cfd12405",
-      "age_hours": 1.74,
+      "row_count": 17068,
+      "source_time": "2026-11-12T00:21:18+00:00",
+      "fetched_at": "2026-11-12T04:19:04.322806+00:00",
+      "sha256": "24559ca6b432da98276de4af2b350ad8cf831b7cdb4fb1fc4325c540cc0046bc",
+      "age_hours": 3.96,
       "fresh": true,
       "demand_fields_present": false,
       "unnamed_rows": 94,
@@ -38,10 +38,10 @@
         "updatedAt"
       ],
       "row_count": 10895,
-      "source_time": "2026-11-11T19:22:04+00:00",
-      "fetched_at": "2026-11-11T23:05:32.518538+00:00",
-      "sha256": "0532049e4adbf1bb5ed798f88bdc19bf05fbb7977a531e7cf62d581b39be21c4",
-      "age_hours": 3.72,
+      "source_time": "2026-11-12T01:22:06+00:00",
+      "fetched_at": "2026-11-12T04:19:04.322806+00:00",
+      "sha256": "9300b10639eb4e69540cb5ac947d2fa1f08b4bbfaff0b4a1a5ae815000cc49e4",
+      "age_hours": 2.95,
       "fresh": true,
       "demand_fields_present": false,
       "unnamed_rows": 171,
@@ -62,9 +62,9 @@
       ],
       "row_count": 29878,
       "source_time": "2026-11-10T08:23:58+00:00",
-      "fetched_at": "2026-11-11T23:05:32.518538+00:00",
+      "fetched_at": "2026-11-12T04:19:04.322806+00:00",
       "sha256": "bb7a78301e3f0562ee27f847d5ec3cf3e83e811c24285fdeaec69804e6ad1f31",
-      "age_hours": 38.69,
+      "age_hours": 43.92,
       "fresh": true,
       "demand_fields_present": true,
       "unnamed_rows": 284,
@@ -94,11 +94,11 @@
   "filters": {
     "filtered_out": {
       "unnamed_item": 265,
-      "no_regional_match": 2,
-      "weak_demand": 24087,
-      "missing_prices": 10,
-      "over_unit_cap": 66,
-      "insufficient_return": 3515
+      "no_regional_match": 7,
+      "weak_demand": 24080,
+      "missing_prices": 14,
+      "over_unit_cap": 56,
+      "insufficient_return": 3521
     },
     "matching_candidates_before_limit": 20
   },
