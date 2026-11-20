@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T10:33:07.501424+00:00",
+  "generated_at": "2026-11-20T18:51:21.469239+00:00",
   "mode": "live",
   "status": "unavailable",
   "feeds": [
@@ -15,11 +15,11 @@
         "historical",
         "updatedAt"
       ],
-      "row_count": 16778,
-      "source_time": "2026-11-20T09:22:11+00:00",
-      "fetched_at": "2026-11-20T10:33:07.501424+00:00",
-      "sha256": "c34049e32f5b6b6cdfcdac1e3ce0097b1b0b443555f99482309b049990091d68",
-      "age_hours": 1.18,
+      "row_count": 16770,
+      "source_time": "2026-11-20T15:22:12+00:00",
+      "fetched_at": "2026-11-20T18:51:21.469239+00:00",
+      "sha256": "6265dd0f9d2bf05b6b4475080051df06d8a7dd4f76a783ceeb24bfd873f7df02",
+      "age_hours": 3.49,
       "fresh": true,
       "demand_fields_present": false,
       "unnamed_rows": 94,
@@ -37,11 +37,11 @@
         "historical",
         "updatedAt"
       ],
-      "row_count": 10739,
-      "source_time": "2026-11-20T07:22:56+00:00",
-      "fetched_at": "2026-11-20T10:33:07.501424+00:00",
-      "sha256": "4874278085e5fe2f159a4e74bcdea5922270edf727c6f0507f21586c4a2144ca",
-      "age_hours": 3.17,
+      "row_count": 10738,
+      "source_time": "2026-11-20T16:22:55+00:00",
+      "fetched_at": "2026-11-20T18:51:21.469239+00:00",
+      "sha256": "f8e613f555aeda1aa9504fd82786357d8ce8bb5e7f0c4bcbcfb7b8d975ad6003",
+      "age_hours": 2.47,
       "fresh": true,
       "demand_fields_present": false,
       "unnamed_rows": 168,
@@ -62,9 +62,9 @@
       ],
       "row_count": 29705,
       "source_time": "2026-11-19T08:22:35+00:00",
-      "fetched_at": "2026-11-20T10:33:07.501424+00:00",
+      "fetched_at": "2026-11-20T18:51:21.469239+00:00",
       "sha256": "16e386a5084121b60a5c2dae90b840d68976b91f6754ee7a9c966afdbd88b57f",
-      "age_hours": 26.18,
+      "age_hours": 34.48,
       "fresh": true,
       "demand_fields_present": true,
       "unnamed_rows": 281,
@@ -95,12 +95,12 @@
     "filtered_out": {
       "unnamed_item": 262,
       "no_regional_match": 0,
-      "weak_demand": 23815,
-      "missing_prices": 10,
-      "over_unit_cap": 61,
-      "insufficient_return": 3351
+      "weak_demand": 23806,
+      "missing_prices": 13,
+      "over_unit_cap": 64,
+      "insufficient_return": 3353
     },
-    "matching_candidates_before_limit": 18
+    "matching_candidates_before_limit": 10
   },
   "error": "Changed contents for existing region scan timestamp"
 }
