@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T13:12:28.904018+00:00",
+  "generated_at": "2026-11-26T22:37:17.387182+00:00",
   "mode": "live",
   "status": "watch_only",
   "feeds": [
@@ -15,11 +15,11 @@
         "historical",
         "updatedAt"
       ],
-      "row_count": 16424,
-      "source_time": "2026-11-26T09:22:02+00:00",
-      "fetched_at": "2026-11-26T13:12:28.904018+00:00",
-      "sha256": "2c08238fa7fc97c3a3e3043ff785e9960f8877797043e7912f22e7a505c8b592",
-      "age_hours": 3.84,
+      "row_count": 16324,
+      "source_time": "2026-11-26T18:22:07+00:00",
+      "fetched_at": "2026-11-26T22:37:17.387182+00:00",
+      "sha256": "6e4ede6751c888cf441dfc059cc6ca5202166509d370c3b649a1849e0332751f",
+      "age_hours": 4.25,
       "fresh": true,
       "demand_fields_present": false,
       "unnamed_rows": 94,
@@ -38,13 +38,13 @@
         "updatedAt"
       ],
       "row_count": 10725,
-      "source_time": "2026-11-26T10:22:49+00:00",
-      "fetched_at": "2026-11-26T13:12:28.904018+00:00",
-      "sha256": "fd52b0c5cb9ce74eef821525fef1c3fea54c4bbc69c06377381743d788287d07",
-      "age_hours": 2.83,
+      "source_time": "2026-11-26T19:22:50+00:00",
+      "fetched_at": "2026-11-26T22:37:17.387182+00:00",
+      "sha256": "18f03652d8905b14e266e31fd73c112dde04cc9dc65a11689a0aedc33df0b7ae",
+      "age_hours": 3.24,
       "fresh": true,
       "demand_fields_present": false,
-      "unnamed_rows": 166,
+      "unnamed_rows": 168,
       "positive_demand_rows": 0
     },
     {
@@ -62,9 +62,9 @@
       ],
       "row_count": 29674,
       "source_time": "2026-11-25T08:58:54+00:00",
-      "fetched_at": "2026-11-26T13:12:28.904018+00:00",
+      "fetched_at": "2026-11-26T22:37:17.387182+00:00",
       "sha256": "41253d11a723f3649a377a293ce7250378281e3acfc6655f72eea7b34457f075",
-      "age_hours": 28.23,
+      "age_hours": 37.64,
       "fresh": true,
       "demand_fields_present": true,
       "unnamed_rows": 279,
@@ -73,41 +73,17 @@
   ],
   "watchlist": [
     {
-      "item_id": 258961,
-      "name": "Tarnished Dawnlit Defender",
-      "scope": "realm",
-      "market": "Proudmoore-US items",
-      "source_time": "2026-11-26T09:22:02+00:00",
-      "regional_source_time": "2026-11-25T08:58:54+00:00",
-      "observed_buy_copper": 1500000,
-      "research_max_buy_copper": 2841666,
-      "conservative_resale_copper": 3600000,
-      "projected_profit_copper": 1910000,
-      "return_bps": 12733,
-      "regional_sale_rate": "0.107",
-      "regional_sold_per_day": "2.568",
-      "status": "watch_only",
-      "recommended_quantity": 0,
-      "blockers": [
-        "Current listing price and available quantity not verified",
-        "No verified whitelist or inventory balance",
-        "Regional demand estimate; Proudmoore sell-through unproven",
-        "7\u201314 day market validation not completed",
-        "Base item CSV does not verify equipment or other item variants"
-      ]
-    },
-    {
       "item_id": 258923,
       "name": "Tarnished Dawnlit Corsair's Hood",
       "scope": "realm",
       "market": "Proudmoore-US items",
-      "source_time": "2026-11-26T09:22:02+00:00",
+      "source_time": "2026-11-26T18:22:07+00:00",
       "regional_source_time": "2026-11-25T08:58:54+00:00",
-      "observed_buy_copper": 999800,
-      "research_max_buy_copper": 2129024,
-      "conservative_resale_copper": 2699820,
-      "projected_profit_copper": 1555029,
-      "return_bps": 15553,
+      "observed_buy_copper": 800000,
+      "research_max_buy_copper": 2609555,
+      "conservative_resale_copper": 3306807,
+      "projected_profit_copper": 2331466,
+      "return_bps": 29143,
       "regional_sale_rate": "0.107",
       "regional_sold_per_day": "2.14",
       "status": "watch_only",
@@ -121,67 +97,19 @@
       ]
     },
     {
-      "item_id": 258940,
-      "name": "Tarnished Dawnlit Commander's Greaves",
+      "item_id": 258961,
+      "name": "Tarnished Dawnlit Defender",
       "scope": "realm",
       "market": "Proudmoore-US items",
-      "source_time": "2026-11-26T09:22:02+00:00",
+      "source_time": "2026-11-26T18:22:07+00:00",
       "regional_source_time": "2026-11-25T08:58:54+00:00",
-      "observed_buy_copper": 590000,
-      "research_max_buy_copper": 1416666,
-      "conservative_resale_copper": 1800000,
-      "projected_profit_copper": 1110000,
-      "return_bps": 18813,
-      "regional_sale_rate": "0.121",
-      "regional_sold_per_day": "2.662",
-      "status": "watch_only",
-      "recommended_quantity": 0,
-      "blockers": [
-        "Current listing price and available quantity not verified",
-        "No verified whitelist or inventory balance",
-        "Regional demand estimate; Proudmoore sell-through unproven",
-        "7\u201314 day market validation not completed",
-        "Base item CSV does not verify equipment or other item variants"
-      ]
-    },
-    {
-      "item_id": 239639,
-      "name": "Elegant Artisan's Herbalism Hat",
-      "scope": "realm",
-      "market": "Proudmoore-US items",
-      "source_time": "2026-11-26T09:22:02+00:00",
-      "regional_source_time": "2026-11-25T08:58:54+00:00",
-      "observed_buy_copper": 1500000,
-      "research_max_buy_copper": 2064884,
-      "conservative_resale_copper": 2618802,
-      "projected_profit_copper": 977861,
-      "return_bps": 6519,
-      "regional_sale_rate": "0.333",
-      "regional_sold_per_day": "3.33",
-      "status": "watch_only",
-      "recommended_quantity": 0,
-      "blockers": [
-        "Current listing price and available quantity not verified",
-        "No verified whitelist or inventory balance",
-        "Regional demand estimate; Proudmoore sell-through unproven",
-        "7\u201314 day market validation not completed",
-        "Base item CSV does not verify equipment or other item variants"
-      ]
-    },
-    {
-      "item_id": 244621,
-      "name": "Sin'dorei Herbalist's Backpack",
-      "scope": "realm",
-      "market": "Proudmoore-US items",
-      "source_time": "2026-11-26T09:22:02+00:00",
-      "regional_source_time": "2026-11-25T08:58:54+00:00",
-      "observed_buy_copper": 4590000,
-      "research_max_buy_copper": 4627619,
-      "conservative_resale_copper": 5855940,
-      "projected_profit_copper": 963143,
-      "return_bps": 2098,
-      "regional_sale_rate": "0.196",
-      "regional_sold_per_day": "1.568",
+      "observed_buy_copper": 2000000,
+      "research_max_buy_copper": 2841666,
+      "conservative_resale_copper": 3600000,
+      "projected_profit_copper": 1410000,
+      "return_bps": 7050,
+      "regional_sale_rate": "0.107",
+      "regional_sold_per_day": "2.568",
       "status": "watch_only",
       "recommended_quantity": 0,
       "blockers": [
@@ -197,7 +125,7 @@
       "name": "Tarnished Dawnlit Commander's Gauntlets",
       "scope": "realm",
       "market": "Proudmoore-US items",
-      "source_time": "2026-11-26T09:22:02+00:00",
+      "source_time": "2026-11-26T18:22:07+00:00",
       "regional_source_time": "2026-11-25T08:58:54+00:00",
       "observed_buy_copper": 1000000,
       "research_max_buy_copper": 1473010,
@@ -217,19 +145,19 @@
       ]
     },
     {
-      "item_id": 258932,
-      "name": "Tarnished Dawnlit Sentinel's Chausses",
+      "item_id": 244622,
+      "name": "Sin'dorei Hunter's Pack",
       "scope": "realm",
       "market": "Proudmoore-US items",
-      "source_time": "2026-11-26T09:22:02+00:00",
+      "source_time": "2026-11-26T18:22:07+00:00",
       "regional_source_time": "2026-11-25T08:58:54+00:00",
-      "observed_buy_copper": 790000,
-      "research_max_buy_copper": 899441,
-      "conservative_resale_copper": 1146664,
-      "projected_profit_copper": 289330,
-      "return_bps": 3662,
-      "regional_sale_rate": "0.1",
-      "regional_sold_per_day": "2.6",
+      "observed_buy_copper": 1500000,
+      "research_max_buy_copper": 1772204,
+      "conservative_resale_copper": 2249100,
+      "projected_profit_copper": 626645,
+      "return_bps": 4177,
+      "regional_sale_rate": "0.141",
+      "regional_sold_per_day": "1.269",
       "status": "watch_only",
       "recommended_quantity": 0,
       "blockers": [
@@ -241,19 +169,19 @@
       ]
     },
     {
-      "item_id": 18562,
-      "name": "Elementium Ingot",
+      "item_id": 41805,
+      "name": "Borean Man O' War",
       "scope": "commodities",
       "market": "US commodities",
-      "source_time": "2026-11-26T10:22:49+00:00",
+      "source_time": "2026-11-26T19:22:50+00:00",
       "regional_source_time": "2026-11-25T08:58:54+00:00",
-      "observed_buy_copper": 100000,
-      "research_max_buy_copper": 147313,
-      "conservative_resale_copper": 196607,
-      "projected_profit_copper": 76776,
-      "return_bps": 7677,
-      "regional_sale_rate": "0.105",
-      "regional_sold_per_day": "416.955",
+      "observed_buy_copper": 10000,
+      "research_max_buy_copper": 98541,
+      "conservative_resale_copper": 135000,
+      "projected_profit_copper": 108250,
+      "return_bps": 108250,
+      "regional_sale_rate": "0.168",
+      "regional_sold_per_day": "95.76",
       "status": "watch_only",
       "recommended_quantity": 0,
       "blockers": [
@@ -264,19 +192,19 @@
       ]
     },
     {
-      "item_id": 171276,
-      "name": "Spectral Flask of Power",
+      "item_id": 52180,
+      "name": "Nightstone",
       "scope": "commodities",
       "market": "US commodities",
-      "source_time": "2026-11-26T10:22:49+00:00",
+      "source_time": "2026-11-26T19:22:50+00:00",
       "regional_source_time": "2026-11-25T08:58:54+00:00",
-      "observed_buy_copper": 300000,
-      "research_max_buy_copper": 303435,
-      "conservative_resale_copper": 393813,
-      "projected_profit_copper": 64122,
-      "return_bps": 2137,
-      "regional_sale_rate": "0.162",
-      "regional_sold_per_day": "203.634",
+      "observed_buy_copper": 102800,
+      "research_max_buy_copper": 157297,
+      "conservative_resale_copper": 209218,
+      "projected_profit_copper": 85957,
+      "return_bps": 8361,
+      "regional_sale_rate": "0.103",
+      "regional_sold_per_day": "9.476",
       "status": "watch_only",
       "recommended_quantity": 0,
       "blockers": [
@@ -287,19 +215,19 @@
       ]
     },
     {
-      "item_id": 6657,
-      "name": "Savory Deviate Delight",
+      "item_id": 41807,
+      "name": "Dragonfin Angelfish",
       "scope": "commodities",
       "market": "US commodities",
-      "source_time": "2026-11-26T10:22:49+00:00",
+      "source_time": "2026-11-26T19:22:50+00:00",
       "regional_source_time": "2026-11-25T08:58:54+00:00",
-      "observed_buy_copper": 200000,
-      "research_max_buy_copper": 201754,
-      "conservative_resale_copper": 265374,
-      "projected_profit_copper": 42105,
-      "return_bps": 2105,
-      "regional_sale_rate": "0.563",
-      "regional_sold_per_day": "2505.35",
+      "observed_buy_copper": 10000,
+      "research_max_buy_copper": 31465,
+      "conservative_resale_copper": 50273,
+      "projected_profit_copper": 27759,
+      "return_bps": 27759,
+      "regional_sale_rate": "0.224",
+      "regional_sold_per_day": "1710.688",
       "status": "watch_only",
       "recommended_quantity": 0,
       "blockers": [
@@ -310,19 +238,42 @@
       ]
     },
     {
-      "item_id": 265800,
-      "name": "Earthy Garnish",
+      "item_id": 41803,
+      "name": "Rockfin Grouper",
       "scope": "commodities",
       "market": "US commodities",
-      "source_time": "2026-11-26T10:22:49+00:00",
+      "source_time": "2026-11-26T19:22:50+00:00",
       "regional_source_time": "2026-11-25T08:58:54+00:00",
-      "observed_buy_copper": 18900,
-      "research_max_buy_copper": 25376,
-      "conservative_resale_copper": 42582,
-      "projected_profit_copper": 11552,
-      "return_bps": 6112,
-      "regional_sale_rate": "0.555",
-      "regional_sold_per_day": "2871.015",
+      "observed_buy_copper": 5000,
+      "research_max_buy_copper": 12199,
+      "conservative_resale_copper": 25936,
+      "projected_profit_copper": 9639,
+      "return_bps": 19278,
+      "regional_sale_rate": "0.336",
+      "regional_sold_per_day": "1940.064",
+      "status": "watch_only",
+      "recommended_quantity": 0,
+      "blockers": [
+        "Current listing price and available quantity not verified",
+        "No verified whitelist or inventory balance",
+        "Regional demand estimate; Proudmoore sell-through unproven",
+        "7\u201314 day market validation not completed"
+      ]
+    },
+    {
+      "item_id": 22785,
+      "name": "Felweed",
+      "scope": "commodities",
+      "market": "US commodities",
+      "source_time": "2026-11-26T19:22:50+00:00",
+      "regional_source_time": "2026-11-25T08:58:54+00:00",
+      "observed_buy_copper": 10000,
+      "research_max_buy_copper": 10810,
+      "conservative_resale_copper": 24182,
+      "projected_profit_copper": 2972,
+      "return_bps": 2972,
+      "regional_sale_rate": "0.245",
+      "regional_sold_per_day": "379.26",
       "status": "watch_only",
       "recommended_quantity": 0,
       "blockers": [
@@ -354,67 +305,133 @@
   },
   "filters": {
     "filtered_out": {
-      "unnamed_item": 260,
-      "no_regional_match": 0,
-      "weak_demand": 23466,
-      "missing_prices": 7,
-      "over_unit_cap": 67,
-      "insufficient_return": 3338
+      "unnamed_item": 262,
+      "no_regional_match": 6,
+      "weak_demand": 23358,
+      "missing_prices": 13,
+      "over_unit_cap": 57,
+      "insufficient_return": 3344
     },
-    "matching_candidates_before_limit": 11
+    "matching_candidates_before_limit": 9
   },
   "history": {
-    "new_scans": 3,
-    "retained_scans": 177,
-    "retained_observations": 1450,
+    "new_scans": 2,
+    "retained_scans": 179,
+    "retained_observations": 1459,
     "first_observation": "2026-10-31T11:32:23+00:00",
-    "last_observation": "2026-11-26T10:22:49+00:00",
+    "last_observation": "2026-11-26T19:22:50+00:00",
     "coverage": "Shortlisted observations only; not complete market or sales history"
   },
   "enrichment": {
-    "generated_at": "2026-11-26T13:12:30.788709+00:00",
+    "generated_at": "2026-11-26T22:37:18.527119+00:00",
     "commodity_details": [],
     "vendor_candidates": [
       {
-        "item_id": 260639,
-        "name": "Fractured Bone",
-        "reference_vendor_copper": 18641,
-        "snapshot_buy_copper": 10000,
-        "spread_per_unit_copper": 8641,
-        "source_time": "2026-11-26T10:22:49+00:00",
+        "item_id": 132219,
+        "name": "Opposable Leaf",
+        "reference_vendor_copper": 66681,
+        "snapshot_buy_copper": 20000,
+        "spread_per_unit_copper": 46681,
+        "source_time": "2026-11-26T19:22:50+00:00",
         "build": "12.1.5.70961",
         "status": "reference_only",
         "recommended_quantity": 0
       },
       {
-        "item_id": 260657,
-        "name": "Holey Organ",
-        "reference_vendor_copper": 6372,
-        "snapshot_buy_copper": 1000,
-        "spread_per_unit_copper": 5372,
-        "source_time": "2026-11-26T10:22:49+00:00",
+        "item_id": 245843,
+        "name": "Six of Void",
+        "reference_vendor_copper": 20000,
+        "snapshot_buy_copper": 14300,
+        "spread_per_unit_copper": 5700,
+        "source_time": "2026-11-26T19:22:50+00:00",
         "build": "12.1.5.70961",
         "status": "reference_only",
         "recommended_quantity": 0
       },
       {
-        "item_id": 234973,
-        "name": "Pearlshell Scroll Case",
-        "reference_vendor_copper": 12748,
-        "snapshot_buy_copper": 10000,
-        "spread_per_unit_copper": 2748,
-        "source_time": "2026-11-26T10:22:49+00:00",
+        "item_id": 32428,
+        "name": "Heart of Darkness",
+        "reference_vendor_copper": 5000,
+        "snapshot_buy_copper": 2100,
+        "spread_per_unit_copper": 2900,
+        "source_time": "2026-11-26T19:22:50+00:00",
         "build": "12.1.5.70961",
         "status": "reference_only",
         "recommended_quantity": 0
       },
       {
-        "item_id": 61985,
-        "name": "Banana Cocktail",
-        "reference_vendor_copper": 375,
-        "snapshot_buy_copper": 200,
-        "spread_per_unit_copper": 175,
-        "source_time": "2026-11-26T10:22:49+00:00",
+        "item_id": 39907,
+        "name": "Subtle Sun Crystal",
+        "reference_vendor_copper": 7500,
+        "snapshot_buy_copper": 5000,
+        "spread_per_unit_copper": 2500,
+        "source_time": "2026-11-26T19:22:50+00:00",
+        "build": "12.1.5.70961",
+        "status": "reference_only",
+        "recommended_quantity": 0
+      },
+      {
+        "item_id": 58090,
+        "name": "Earthen Potion",
+        "reference_vendor_copper": 5000,
+        "snapshot_buy_copper": 2500,
+        "spread_per_unit_copper": 2500,
+        "source_time": "2026-11-26T19:22:50+00:00",
+        "build": "12.1.5.70961",
+        "status": "reference_only",
+        "recommended_quantity": 0
+      },
+      {
+        "item_id": 11754,
+        "name": "Black Diamond",
+        "reference_vendor_copper": 2500,
+        "snapshot_buy_copper": 1100,
+        "spread_per_unit_copper": 1400,
+        "source_time": "2026-11-26T19:22:50+00:00",
+        "build": "12.1.5.70961",
+        "status": "reference_only",
+        "recommended_quantity": 0
+      },
+      {
+        "item_id": 132212,
+        "name": "Frothing Essence",
+        "reference_vendor_copper": 2082,
+        "snapshot_buy_copper": 800,
+        "spread_per_unit_copper": 1282,
+        "source_time": "2026-11-26T19:22:50+00:00",
+        "build": "12.1.5.70961",
+        "status": "reference_only",
+        "recommended_quantity": 0
+      },
+      {
+        "item_id": 197779,
+        "name": "Filet of Fangs",
+        "reference_vendor_copper": 2000,
+        "snapshot_buy_copper": 1100,
+        "spread_per_unit_copper": 900,
+        "source_time": "2026-11-26T19:22:50+00:00",
+        "build": "12.1.5.70961",
+        "status": "reference_only",
+        "recommended_quantity": 0
+      },
+      {
+        "item_id": 58268,
+        "name": "Roasted Beef",
+        "reference_vendor_copper": 900,
+        "snapshot_buy_copper": 500,
+        "spread_per_unit_copper": 400,
+        "source_time": "2026-11-26T19:22:50+00:00",
+        "build": "12.1.5.70961",
+        "status": "reference_only",
+        "recommended_quantity": 0
+      },
+      {
+        "item_id": 35953,
+        "name": "Mead-Basted Caribou",
+        "reference_vendor_copper": 800,
+        "snapshot_buy_copper": 500,
+        "spread_per_unit_copper": 300,
+        "source_time": "2026-11-26T19:22:50+00:00",
         "build": "12.1.5.70961",
         "status": "reference_only",
         "recommended_quantity": 0
@@ -422,35 +439,63 @@
     ],
     "errors": [
       {
-        "source": "AHledger item 260639",
+        "source": "AHledger item 132219",
         "message": "HTTP Error 404: Not Found"
       },
       {
-        "source": "AHledger item 260657",
+        "source": "AHledger item 245843",
         "message": "HTTP Error 404: Not Found"
       },
       {
-        "source": "AHledger item 234973",
+        "source": "AHledger item 32428",
         "message": "HTTP Error 404: Not Found"
       },
       {
-        "source": "AHledger item 61985",
+        "source": "AHledger item 39907",
         "message": "HTTP Error 404: Not Found"
       },
       {
-        "source": "AHledger item 18562",
+        "source": "AHledger item 58090",
         "message": "HTTP Error 404: Not Found"
       },
       {
-        "source": "AHledger item 171276",
+        "source": "AHledger item 11754",
         "message": "HTTP Error 404: Not Found"
       },
       {
-        "source": "AHledger item 6657",
+        "source": "AHledger item 132212",
         "message": "HTTP Error 404: Not Found"
       },
       {
-        "source": "AHledger item 265800",
+        "source": "AHledger item 197779",
+        "message": "HTTP Error 404: Not Found"
+      },
+      {
+        "source": "AHledger item 58268",
+        "message": "HTTP Error 404: Not Found"
+      },
+      {
+        "source": "AHledger item 35953",
+        "message": "HTTP Error 404: Not Found"
+      },
+      {
+        "source": "AHledger item 41805",
+        "message": "HTTP Error 404: Not Found"
+      },
+      {
+        "source": "AHledger item 52180",
+        "message": "HTTP Error 404: Not Found"
+      },
+      {
+        "source": "AHledger item 41807",
+        "message": "HTTP Error 404: Not Found"
+      },
+      {
+        "source": "AHledger item 41803",
+        "message": "HTTP Error 404: Not Found"
+      },
+      {
+        "source": "AHledger item 22785",
         "message": "HTTP Error 404: Not Found"
       }
     ],
@@ -458,9 +503,9 @@
       "status": "fresh",
       "region": "us",
       "game": "retail",
-      "price_copper": 4051210000,
-      "observed_at": "2026-11-26T13:03:30+00:00",
-      "fetched_at": "2026-11-26T13:12:30.788709+00:00",
+      "price_copper": 3058260000,
+      "observed_at": "2026-11-26T22:23:30+00:00",
+      "fetched_at": "2026-11-26T22:37:18.527119+00:00",
       "source": "wowtoken.app",
       "source_url": "https://data.wowtoken.app/v2/current/retail.json"
     },
@@ -471,17 +516,17 @@
       "catalog_rows": 175791,
       "stable_stackable_rows": 24706,
       "source": "Wago client DB2",
-      "matched_commodities": 10642,
-      "positive_vendor_references": 10323,
+      "matched_commodities": 10640,
+      "positive_vendor_references": 10321,
       "commodity_count": 10725,
-      "commodity_scan_at": "2026-11-26T10:22:49+00:00",
+      "commodity_scan_at": "2026-11-26T19:22:50+00:00",
       "status": "reference_only",
       "live_vendor_verified": false,
-      "below_reference_count": 4
+      "below_reference_count": 12
     },
     "status": "partial",
     "daily_brief": {
-      "generated_at": "2026-11-26T13:12:30.788709+00:00",
+      "generated_at": "2026-11-26T22:37:18.527119+00:00",
       "time_limit_minutes": 15,
       "session_cap_copper": 10000000,
       "status": "skip",
@@ -494,7 +539,7 @@
       "reason": "No current, corroborated vendor-reference lot fits the limits"
     },
     "trading_plan": {
-      "generated_at": "2026-11-26T13:12:30.788709+00:00",
+      "generated_at": "2026-11-26T22:37:18.527119+00:00",
       "policy": {
         "bankroll_copper": 2000000000,
         "reserve_copper": 400000000,
@@ -517,7 +562,7 @@
         "provider": "r/woweconomy",
         "source_url": "https://www.reddit.com/r/woweconomy/new/.rss",
         "status": "unavailable",
-        "fetched_at": "2026-11-26T13:12:30.788709+00:00",
+        "fetched_at": "2026-11-26T22:37:18.527119+00:00",
         "entries": [],
         "message": "HTTP Error 404: Not Found"
       },
@@ -525,7 +570,7 @@
         "provider": "TSM Blog",
         "source_url": "https://blog.tradeskillmaster.com/feed/",
         "status": "unavailable",
-        "fetched_at": "2026-11-26T13:12:30.788709+00:00",
+        "fetched_at": "2026-11-26T22:37:18.527119+00:00",
         "entries": [],
         "message": "HTTP Error 403: Forbidden"
       }
